@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="89"
-  DTS:VersionGUID="{A55D9E37-A9DC-4440-8853-AD9B611C0DDA}">
+  DTS:VersionBuild="98"
+  DTS:VersionGUID="{70DDB088-678A-483D-84E7-EFFBC69EDD4C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -686,7 +686,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Delete data from dimensions and fact tables"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="6">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -703,7 +703,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Ensure dimensions and fact tables exist"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="6">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -720,7 +720,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Ensure DW schema exists"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="6">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -737,7 +737,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Ensure DWSTAGE schema exists"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -771,7 +771,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Ensure FeeStage table exists"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -788,7 +788,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Ensure LicenseExtract table exists"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -805,7 +805,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Ensure LicenseStage table exists"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -822,7 +822,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Ensure needed functions exist"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -839,7 +839,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Ensure PaymentExtract table exists"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -856,7 +856,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Ensure PaymentStage table exists"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="6">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -890,7 +890,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Normalize data in LicenseExtract table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -907,7 +907,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Normalize data in PaymentExtract table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1555,13 +1555,6 @@ WHERE [RowNumber] = 1;</property>
                       cachedName="BusinessType"
                       externalMetadataColumnId="Package\Populate BusinessDim table\Insert business data to database.Inputs[OLE DB Destination Input].ExternalColumns[BusinessType]"
                       lineageId="Package\Populate BusinessDim table\Get staged and filtered license data.Outputs[OLE DB Source Output].Columns[BusinessType]" />
-                    <inputColumn
-                      refId="Package\Populate BusinessDim table\Insert business data to database.Inputs[OLE DB Destination Input].Columns[AddressZip]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="AddressZip"
-                      externalMetadataColumnId="Package\Populate BusinessDim table\Insert business data to database.Inputs[OLE DB Destination Input].ExternalColumns[AddressZip]"
-                      lineageId="Package\Populate BusinessDim table\Get staged and filtered license data.Outputs[OLE DB Source Output].Columns[AddressZip]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1631,24 +1624,26 @@ WHERE [RowNumber] = 1;</property>
                       name="CensusTract" />
                     <externalMetadataColumn
                       refId="Package\Populate BusinessDim table\Insert business data to database.Inputs[OLE DB Destination Input].ExternalColumns[Longitude]"
-                      dataType="wstr"
-                      length="50"
-                      name="Longitude" />
+                      dataType="numeric"
+                      name="Longitude"
+                      precision="9"
+                      scale="6" />
                     <externalMetadataColumn
                       refId="Package\Populate BusinessDim table\Insert business data to database.Inputs[OLE DB Destination Input].ExternalColumns[Latitude]"
-                      dataType="wstr"
-                      length="50"
-                      name="Latitude" />
+                      dataType="numeric"
+                      name="Latitude"
+                      precision="8"
+                      scale="6" />
                     <externalMetadataColumn
                       refId="Package\Populate BusinessDim table\Insert business data to database.Inputs[OLE DB Destination Input].ExternalColumns[BusinessType]"
                       dataType="wstr"
                       length="50"
                       name="BusinessType" />
                     <externalMetadataColumn
-                      refId="Package\Populate BusinessDim table\Insert business data to database.Inputs[OLE DB Destination Input].ExternalColumns[AddressZip]"
+                      refId="Package\Populate BusinessDim table\Insert business data to database.Inputs[OLE DB Destination Input].ExternalColumns[AddressZIP]"
                       dataType="wstr"
                       length="50"
-                      name="AddressZip" />
+                      name="AddressZIP" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -7432,16 +7427,6 @@ WHERE [RowNumber] = 1;</property>
                       name="ExpirationDate"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].Columns[LicenseNumber]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].ExternalColumns[DCALicenseNumber]"
-                      length="50"
-                      lineageId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].Columns[LicenseNumber]"
-                      name="LicenseNumber"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].Columns[BusinessName]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
@@ -7471,19 +7456,29 @@ WHERE [RowNumber] = 1;</property>
                       lineageId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].Columns[Industry]"
                       name="Industry"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].Columns[LicenseNumber]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].ExternalColumns[LicenseNumber]"
+                      length="50"
+                      lineageId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].Columns[LicenseNumber]"
+                      name="LicenseNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].Columns[BusinessType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].ExternalColumns[BusinessType]"
+                      length="50"
+                      lineageId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].Columns[BusinessType]"
+                      name="BusinessType"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].ExternalColumns[DCALicenseNumber]"
-                      dataType="wstr"
-                      length="50"
-                      name="DCALicenseNumber" />
-                    <externalMetadataColumn
-                      refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].ExternalColumns[LicenseType]"
-                      dataType="wstr"
-                      length="50"
-                      name="LicenseType" />
                     <externalMetadataColumn
                       refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].ExternalColumns[LicenseCreationDate]"
                       dataType="dbDate"
@@ -7564,14 +7559,26 @@ WHERE [RowNumber] = 1;</property>
                       name="CensusTract" />
                     <externalMetadataColumn
                       refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].ExternalColumns[Longitude]"
-                      dataType="wstr"
-                      length="50"
-                      name="Longitude" />
+                      dataType="numeric"
+                      name="Longitude"
+                      precision="9"
+                      scale="6" />
                     <externalMetadataColumn
                       refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].ExternalColumns[Latitude]"
+                      dataType="numeric"
+                      name="Latitude"
+                      precision="8"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].ExternalColumns[LicenseNumber]"
                       dataType="wstr"
                       length="50"
-                      name="Latitude" />
+                      name="LicenseNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Output].ExternalColumns[BusinessType]"
+                      dataType="wstr"
+                      length="50"
+                      name="BusinessType" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -7579,6 +7586,18 @@ WHERE [RowNumber] = 1;</property>
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
+                    <outputColumn
+                      refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Error Output].Columns[LicenseNumber]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Error Output].Columns[LicenseNumber]"
+                      name="LicenseNumber" />
+                    <outputColumn
+                      refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Error Output].Columns[BusinessType]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Error Output].Columns[BusinessType]"
+                      name="BusinessType" />
                     <outputColumn
                       refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -7601,12 +7620,6 @@ WHERE [RowNumber] = 1;</property>
                       dataType="dbDate"
                       lineageId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Error Output].Columns[LicenseExpirationDate]"
                       name="LicenseExpirationDate" />
-                    <outputColumn
-                      refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Error Output].Columns[DCALicenseNumber]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Error Output].Columns[DCALicenseNumber]"
-                      name="DCALicenseNumber" />
                     <outputColumn
                       refId="Package\Populate LicenseFact table\Extract staged license data.Outputs[OLE DB Source Error Output].Columns[BusinessName]"
                       dataType="wstr"
@@ -9803,13 +9816,6 @@ WHERE [RowNumber] = 1;</property>
                       externalMetadataColumnId="Package\Populate LicenseStage table\Insert license data to database.Inputs[OLE DB Destination Input].ExternalColumns[Industry]"
                       lineageId="Package\Populate LicenseStage table\Sort data.Outputs[Sort Output].Columns[Industry]" />
                     <inputColumn
-                      refId="Package\Populate LicenseStage table\Insert license data to database.Inputs[OLE DB Destination Input].Columns[LicenseType]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="LicenseType"
-                      externalMetadataColumnId="Package\Populate LicenseStage table\Insert license data to database.Inputs[OLE DB Destination Input].ExternalColumns[LicenseType]"
-                      lineageId="Package\Populate LicenseStage table\Sort data.Outputs[Sort Output].Columns[LicenseType]" />
-                    <inputColumn
                       refId="Package\Populate LicenseStage table\Insert license data to database.Inputs[OLE DB Destination Input].Columns[BusinessName]"
                       cachedDataType="wstr"
                       cachedLength="300"
@@ -9930,26 +9936,9 @@ WHERE [RowNumber] = 1;</property>
                       cachedSortKeyPosition="3"
                       externalMetadataColumnId="Package\Populate LicenseStage table\Insert license data to database.Inputs[OLE DB Destination Input].ExternalColumns[LicenseCreationDate]"
                       lineageId="Package\Populate LicenseStage table\Sort data.Outputs[Sort Output].Columns[LicenseCreationDate]" />
-                    <inputColumn
-                      refId="Package\Populate LicenseStage table\Insert license data to database.Inputs[OLE DB Destination Input].Columns[DCALicenseNumber]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="DCALicenseNumber"
-                      externalMetadataColumnId="Package\Populate LicenseStage table\Insert license data to database.Inputs[OLE DB Destination Input].ExternalColumns[DCALicenseNumber]"
-                      lineageId="Package\Populate LicenseStage table\Sort data.Outputs[Sort Output].Columns[DCALicenseNumber]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Populate LicenseStage table\Insert license data to database.Inputs[OLE DB Destination Input].ExternalColumns[DCALicenseNumber]"
-                      dataType="wstr"
-                      length="50"
-                      name="DCALicenseNumber" />
-                    <externalMetadataColumn
-                      refId="Package\Populate LicenseStage table\Insert license data to database.Inputs[OLE DB Destination Input].ExternalColumns[LicenseType]"
-                      dataType="wstr"
-                      length="50"
-                      name="LicenseType" />
                     <externalMetadataColumn
                       refId="Package\Populate LicenseStage table\Insert license data to database.Inputs[OLE DB Destination Input].ExternalColumns[LicenseCreationDate]"
                       dataType="dbDate"
@@ -10030,14 +10019,26 @@ WHERE [RowNumber] = 1;</property>
                       name="CensusTract" />
                     <externalMetadataColumn
                       refId="Package\Populate LicenseStage table\Insert license data to database.Inputs[OLE DB Destination Input].ExternalColumns[Longitude]"
-                      dataType="wstr"
-                      length="50"
-                      name="Longitude" />
+                      dataType="numeric"
+                      name="Longitude"
+                      precision="9"
+                      scale="6" />
                     <externalMetadataColumn
                       refId="Package\Populate LicenseStage table\Insert license data to database.Inputs[OLE DB Destination Input].ExternalColumns[Latitude]"
+                      dataType="numeric"
+                      name="Latitude"
+                      precision="8"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Populate LicenseStage table\Insert license data to database.Inputs[OLE DB Destination Input].ExternalColumns[LicenseNumber]"
                       dataType="wstr"
                       length="50"
-                      name="Latitude" />
+                      name="LicenseNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Populate LicenseStage table\Insert license data to database.Inputs[OLE DB Destination Input].ExternalColumns[BusinessType]"
+                      dataType="wstr"
+                      length="50"
+                      name="BusinessType" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -15811,49 +15812,49 @@ WHERE [RowNumber] = 1;</property>
               startId="Package\Populate PaymentFact table\Extract staged fee data.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Populate PaymentFact table.Paths[Sort Output8]"
-              endId="Package\Populate PaymentFact table\Join on transaction type.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Populate PaymentFact table\Sort by transaction type 1.Outputs[Sort Output]" />
-            <path
-              refId="Package\Populate PaymentFact table.Paths[Sort Output]"
-              endId="Package\Populate PaymentFact table\Join on business names.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Populate PaymentFact table\Sort by business names 2.Outputs[Sort Output]" />
-            <path
-              refId="Package\Populate PaymentFact table.Paths[Sort Output1]"
-              endId="Package\Populate PaymentFact table\Join on industry.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Populate PaymentFact table\Sort by industry 1.Outputs[Sort Output]" />
-            <path
-              refId="Package\Populate PaymentFact table.Paths[Sort Output2]"
-              endId="Package\Populate PaymentFact table\Join on industry.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Populate PaymentFact table\Sort by industry 2.Outputs[Sort Output]" />
-            <path
-              refId="Package\Populate PaymentFact table.Paths[Sort Output3]"
-              endId="Package\Populate PaymentFact table\Join on transaction type.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Populate PaymentFact table\Sort by transaction type 2.Outputs[Sort Output]" />
-            <path
-              refId="Package\Populate PaymentFact table.Paths[Sort Output4]"
               endId="Package\Populate PaymentFact table\Join on fee data.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Populate PaymentFact table\Sort by fee data 1.Outputs[Sort Output]" />
             <path
-              refId="Package\Populate PaymentFact table.Paths[Sort Output5]"
+              refId="Package\Populate PaymentFact table.Paths[Sort Output]"
               endId="Package\Populate PaymentFact table\Join on fee data.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Populate PaymentFact table\Sort by fee data 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Populate PaymentFact table.Paths[Sort Output6]"
+              refId="Package\Populate PaymentFact table.Paths[Sort Output1]"
               endId="Package\Populate PaymentFact table\Join on fee sequence ID.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Populate PaymentFact table\Sort by fee sequence ID 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Populate PaymentFact table.Paths[Sort Output7]"
+              refId="Package\Populate PaymentFact table.Paths[Sort Output2]"
               endId="Package\Populate PaymentFact table\Join on fee sequence ID.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Populate PaymentFact table\Sort by fee sequence ID 1.Outputs[Sort Output]" />
+            <path
+              refId="Package\Populate PaymentFact table.Paths[Sort Output3]"
+              endId="Package\Populate PaymentFact table\Join on transaction type.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Populate PaymentFact table\Sort by transaction type 1.Outputs[Sort Output]" />
+            <path
+              refId="Package\Populate PaymentFact table.Paths[Sort Output4]"
+              endId="Package\Populate PaymentFact table\Join on business names.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Populate PaymentFact table\Sort by business names 2.Outputs[Sort Output]" />
+            <path
+              refId="Package\Populate PaymentFact table.Paths[Sort Output5]"
+              endId="Package\Populate PaymentFact table\Join on industry.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Populate PaymentFact table\Sort by industry 1.Outputs[Sort Output]" />
+            <path
+              refId="Package\Populate PaymentFact table.Paths[Sort Output6]"
+              endId="Package\Populate PaymentFact table\Join on industry.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Populate PaymentFact table\Sort by industry 2.Outputs[Sort Output]" />
+            <path
+              refId="Package\Populate PaymentFact table.Paths[Sort Output7]"
+              endId="Package\Populate PaymentFact table\Join on transaction type.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Populate PaymentFact table\Sort by transaction type 2.Outputs[Sort Output]" />
             <path
               refId="Package\Populate PaymentFact table.Paths[Sort Output9]"
               endId="Package\Populate PaymentFact table\Join on business names.Inputs[Merge Join Left Input]"
@@ -18422,7 +18423,7 @@ WHERE [RowNumber] = 1;</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Set language and time options"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -18456,7 +18457,7 @@ WHERE [RowNumber] = 1;</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate FeeStage table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -18473,7 +18474,7 @@ WHERE [RowNumber] = 1;</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate LicenseExtract table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -18490,7 +18491,7 @@ WHERE [RowNumber] = 1;</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate LicenseStage table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -18507,7 +18508,7 @@ WHERE [RowNumber] = 1;</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate PaymentExtract table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -18524,7 +18525,7 @@ WHERE [RowNumber] = 1;</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate PaymentStage table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="6">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -18641,35 +18642,19 @@ WHERE [RowNumber] = 1;</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 16]"
       DTS:CreationName=""
-      DTS:DTSID="{3CDB2FDF-F2DC-4A0A-A1DF-A717789626BC}"
-      DTS:From="Package\Delete data from dimensions and fact tables"
+      DTS:DTSID="{DBDB6BEB-3F5B-4DCD-AC8F-F47A42838A8B}"
+      DTS:From="Package\Populate TimeDim table"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 16"
-      DTS:To="Package\Populate BusinessDim table" />
+      DTS:To="Package\Populate LicenseFact table" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 17]"
       DTS:CreationName=""
-      DTS:DTSID="{DA135A93-9547-4514-9799-282222A71838}"
-      DTS:From="Package\Delete data from dimensions and fact tables"
+      DTS:DTSID="{5148E3A2-A56F-4B6E-A006-AA56CDC9AC08}"
+      DTS:From="Package\Populate TimeDim table"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 17"
-      DTS:To="Package\Populate FeeDim table" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 18]"
-      DTS:CreationName=""
-      DTS:DTSID="{6D4A3F92-3B8C-486B-A40E-F2554D04E155}"
-      DTS:From="Package\Delete data from dimensions and fact tables"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 18"
-      DTS:To="Package\Populate TimeDim table" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 19]"
-      DTS:CreationName=""
-      DTS:DTSID="{89F64B19-0090-482A-B7C6-E206E58A873C}"
-      DTS:From="Package\Delete data from dimensions and fact tables"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 19"
-      DTS:To="Package\Populate TransactionTypeDim table" />
+      DTS:To="Package\Populate PaymentFact table" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
@@ -18751,14 +18736,6 @@ WHERE [RowNumber] = 1;</property>
       DTS:ObjectName="Constraint 23"
       DTS:To="Package\Populate BusinessDim table" />
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 24]"
-      DTS:CreationName=""
-      DTS:DTSID="{46742558-9344-4C4F-BE7B-61EB81982805}"
-      DTS:From="Package\Populate FeeStage table"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 24"
-      DTS:To="Package\Populate FeeDim table" />
-    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 25]"
       DTS:CreationName=""
       DTS:DTSID="{DA83729F-5D3D-42D0-8849-9F2856F8A5DB}"
@@ -18791,14 +18768,6 @@ WHERE [RowNumber] = 1;</property>
       DTS:ObjectName="Constraint 28"
       DTS:To="Package\Populate IndustryDim table" />
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 29]"
-      DTS:CreationName=""
-      DTS:DTSID="{1F0DEB5A-67AC-4ED0-8B11-9F439E0E53DE}"
-      DTS:From="Package\Delete data from dimensions and fact tables"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 29"
-      DTS:To="Package\Populate IndustryDim table" />
-    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
       DTS:DTSID="{94DEB5CD-973E-49F6-A5E9-437C2DD50C25}"
@@ -18822,14 +18791,6 @@ WHERE [RowNumber] = 1;</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 31"
       DTS:To="Package\Ensure DWSTAGE schema exists" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 32]"
-      DTS:CreationName=""
-      DTS:DTSID="{3769208C-464C-41BD-B2C8-B67A776403DE}"
-      DTS:From="Package\Populate LicenseStage table"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 32"
-      DTS:To="Package\Populate LicenseFact table" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 33]"
       DTS:CreationName=""
@@ -18855,36 +18816,12 @@ WHERE [RowNumber] = 1;</property>
       DTS:ObjectName="Constraint 35"
       DTS:To="Package\Populate PaymentFact table" />
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 36]"
-      DTS:CreationName=""
-      DTS:DTSID="{26556AD9-A63B-439C-A331-5E65C897ACFC}"
-      DTS:From="Package\Populate FeeStage table"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 36"
-      DTS:To="Package\Populate PaymentFact table" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 37]"
-      DTS:CreationName=""
-      DTS:DTSID="{909B8C4B-8E87-4B1F-AE9C-8D49A13BE150}"
-      DTS:From="Package\Populate IndustryDim table"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 37"
-      DTS:To="Package\Populate PaymentFact table" />
-    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 38]"
       DTS:CreationName=""
       DTS:DTSID="{83C15F5F-9562-417A-8496-4C7125A7334A}"
       DTS:From="Package\Populate FeeDim table"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 38"
-      DTS:To="Package\Populate PaymentFact table" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 39]"
-      DTS:CreationName=""
-      DTS:DTSID="{2EE20A36-2B36-4540-BEAF-6EBB15833A6E}"
-      DTS:From="Package\Populate PaymentStage table"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 39"
       DTS:To="Package\Populate PaymentFact table" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
@@ -18901,22 +18838,6 @@ WHERE [RowNumber] = 1;</property>
       DTS:From="Package\Populate TransactionTypeDim table"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 40"
-      DTS:To="Package\Populate PaymentFact table" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 41]"
-      DTS:CreationName=""
-      DTS:DTSID="{51E2FD86-A026-42FE-A895-95324DF0068F}"
-      DTS:From="Package\Delete data from dimensions and fact tables"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 41"
-      DTS:To="Package\Populate LicenseFact table" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 42]"
-      DTS:CreationName=""
-      DTS:DTSID="{2E8AFAB1-AD22-4DB7-B574-730839202075}"
-      DTS:From="Package\Delete data from dimensions and fact tables"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 42"
       DTS:To="Package\Populate PaymentFact table" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 43]"
@@ -18982,54 +18903,58 @@ WHERE [RowNumber] = 1;</property>
         <NodeLayout
           Size="287,42"
           Id="Package\Delete data from dimensions and fact tables"
-          TopLeft="48,1055" />
+          TopLeft="38,968" />
         <NodeLayout
           Size="265,42"
           Id="Package\Ensure dimensions and fact tables exist"
-          TopLeft="62,965" />
+          TopLeft="52,878" />
         <NodeLayout
           Size="200,42"
           Id="Package\Ensure DW schema exists"
-          TopLeft="95,876.5" />
+          TopLeft="85,789.5" />
         <NodeLayout
           Size="232,42"
           Id="Package\Ensure DWSTAGE schema exists"
           TopLeft="577,165" />
         <NodeLayout
+          Size="220,42"
+          Id="Package\Ensure needed functions exist"
+          TopLeft="758,61" />
+        <NodeLayout
           Size="209,42"
           Id="Package\Populate BusinessDim table"
-          TopLeft="106.5,1305.5" />
+          TopLeft="86.5,1204.5" />
         <NodeLayout
           Size="185,42"
           Id="Package\Populate FeeDim table"
-          TopLeft="341,1397" />
+          TopLeft="552,1344" />
         <NodeLayout
           Size="207,42"
           Id="Package\Populate IndustryDim table"
-          TopLeft="485,1294" />
+          TopLeft="412,1206" />
         <NodeLayout
           Size="204,42"
           Id="Package\Populate LicenseFact table"
-          TopLeft="428,1531" />
+          TopLeft="144,1551" />
         <NodeLayout
           Size="210,42"
           Id="Package\Populate PaymentFact table"
-          TopLeft="701,1508" />
+          TopLeft="704,1550" />
         <NodeLayout
           Size="191,42"
           Id="Package\Populate TimeDim table"
-          TopLeft="713,1282" />
+          TopLeft="703,1206" />
         <NodeLayout
           Size="246,42"
           Id="Package\Populate TransactionTypeDim table"
-          TopLeft="948,1283" />
+          TopLeft="990,1207" />
         <NodeLayout
           Size="223,42"
           Id="Package\Set language and time options"
           TopLeft="412,62" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="675.5,207">
+          TopLeft="675.75,207">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -19055,26 +18980,26 @@ WHERE [RowNumber] = 1;</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="363.833333333333,136"
+              EndConnector="363.833333333333,137"
               Start="0,0"
-              End="363.833333333333,128.5">
+              End="363.833333333333,129.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,73.0032618025751" />
+                    End="0,73.5694622570058" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,73.0032618025751"
-                    Point2="0,77.0032618025751"
-                    Point3="4,77.0032618025751" />
+                    Point1="0,73.5694622570058"
+                    Point2="0,77.5694622570058"
+                    Point3="4,77.5694622570058" />
                   <mssgle:LineSegment
-                    End="359.833333333333,77.0032618025751" />
+                    End="359.833333333333,77.5694622570058" />
                   <mssgle:CubicBezierSegment
-                    Point1="359.833333333333,77.0032618025751"
-                    Point2="363.833333333333,77.0032618025751"
-                    Point3="363.833333333333,81.0032618025751" />
+                    Point1="359.833333333333,77.5694622570058"
+                    Point2="363.833333333333,77.5694622570058"
+                    Point3="363.833333333333,81.5694622570058" />
                   <mssgle:LineSegment
-                    End="363.833333333333,128.5" />
+                    End="363.833333333333,129.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19119,7 +19044,7 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 13]"
-          TopLeft="893,954">
+          TopLeft="893,955">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -19153,7 +19078,7 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 14]"
-          TopLeft="670.5,627">
+          TopLeft="670.5,628">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -19187,7 +19112,7 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 15]"
-          TopLeft="992.5,630">
+          TopLeft="992.5,631">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -19221,30 +19146,30 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 16]"
-          TopLeft="86.875,1097">
+          TopLeft="768,1248">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="124.125,208.5"
+              EndConnector="-473,303"
               Start="0,0"
-              End="124.125,201">
+              End="-473,295.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.443797121316" />
+                    End="0,167.824830004704" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,40.443797121316"
-                    Point2="0,44.443797121316"
-                    Point3="4,44.443797121316" />
+                    Point1="0,167.824830004704"
+                    Point2="0,171.824830004704"
+                    Point3="-4,171.824830004704" />
                   <mssgle:LineSegment
-                    End="120.125,44.443797121316" />
+                    End="-469,171.824830004704" />
                   <mssgle:CubicBezierSegment
-                    Point1="120.125,44.443797121316"
-                    Point2="124.125,44.443797121316"
-                    Point3="124.125,48.443797121316" />
+                    Point1="-469,171.824830004704"
+                    Point2="-473,171.824830004704"
+                    Point3="-473,175.824830004704" />
                   <mssgle:LineSegment
-                    End="124.125,201" />
+                    End="-473,295.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19255,98 +19180,18 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 17]"
-          TopLeft="121.75,1097">
+          TopLeft="829.1,1248">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="282.25,300"
+              EndConnector="0,302"
               Start="0,0"
-              End="282.25,292.5">
+              End="0,294.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,125.019929235061" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,125.019929235061"
-                    Point2="0,129.019929235061"
-                    Point3="4,129.019929235061" />
-                  <mssgle:LineSegment
-                    End="278.25,129.019929235061" />
-                  <mssgle:CubicBezierSegment
-                    Point1="278.25,129.019929235061"
-                    Point2="282.25,129.019929235061"
-                    Point3="282.25,133.019929235061" />
-                  <mssgle:LineSegment
-                    End="282.25,292.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 18]"
-          TopLeft="261.25,1097">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="547.25,185"
-              Start="0,0"
-              End="547.25,177.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,58.8020713463751" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,58.8020713463751"
-                    Point2="0,62.8020713463751"
-                    Point3="4,62.8020713463751" />
-                  <mssgle:LineSegment
-                    End="543.25,62.8020713463751" />
-                  <mssgle:CubicBezierSegment
-                    Point1="543.25,62.8020713463751"
-                    Point2="547.25,62.8020713463751"
-                    Point3="547.25,66.8020713463751" />
-                  <mssgle:LineSegment
-                    End="547.25,177.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 19]"
-          TopLeft="296.125,1097">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="774.875,186"
-              Start="0,0"
-              End="774.875,178.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.6477039067855" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,35.6477039067855"
-                    Point2="0,39.6477039067855"
-                    Point3="4,39.6477039067855" />
-                  <mssgle:LineSegment
-                    End="770.875,39.6477039067855" />
-                  <mssgle:CubicBezierSegment
-                    Point1="770.875,39.6477039067855"
-                    Point2="774.875,39.6477039067855"
-                    Point3="774.875,43.6477039067855" />
-                  <mssgle:LineSegment
-                    End="774.875,178.5" />
+                    End="0,294.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19357,30 +19202,18 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 20]"
-          TopLeft="507.8,973">
+          TopLeft="484.916666666667,973">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="47.5333333333334,321"
+              EndConnector="0,233"
               Start="0,0"
-              End="47.5333333333334,313.5">
+              End="0,225.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,170.318160077676" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,170.318160077676"
-                    Point2="0,174.318160077676"
-                    Point3="4,174.318160077676" />
-                  <mssgle:LineSegment
-                    End="43.5333333333334,174.318160077676" />
-                  <mssgle:CubicBezierSegment
-                    Point1="43.5333333333334,174.318160077676"
-                    Point2="47.5333333333334,174.318160077676"
-                    Point3="47.5333333333334,178.318160077676" />
-                  <mssgle:LineSegment
-                    End="47.5333333333334,313.5" />
+                    End="0,225.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19391,7 +19224,7 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 21]"
-          TopLeft="194.75,918.5">
+          TopLeft="184.75,831.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -19413,7 +19246,7 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 22]"
-          TopLeft="193,1007">
+          TopLeft="183,920">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -19435,64 +19268,30 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 23]"
-          TopLeft="426.6,973">
+          TopLeft="436.75,973">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-215.6,332.5"
+              EndConnector="-245.75,231.5"
               Start="0,0"
-              End="-215.6,325">
+              End="-245.75,224">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,94.7974683544304" />
+                    End="0,75.0928237129485" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,94.7974683544304"
-                    Point2="0,98.7974683544304"
-                    Point3="-4,98.7974683544304" />
+                    Point1="0,75.0928237129485"
+                    Point2="0,79.0928237129485"
+                    Point3="-4,79.0928237129485" />
                   <mssgle:LineSegment
-                    End="-211.6,98.7974683544304" />
+                    End="-241.75,79.0928237129485" />
                   <mssgle:CubicBezierSegment
-                    Point1="-211.6,98.7974683544304"
-                    Point2="-215.6,98.7974683544304"
-                    Point3="-215.6,102.79746835443" />
+                    Point1="-241.75,79.0928237129485"
+                    Point2="-245.75,79.0928237129485"
+                    Point3="-245.75,83.0928237129485" />
                   <mssgle:LineSegment
-                    End="-215.6,325" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 24]"
-          TopLeft="750.25,975">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-316.75,422"
-              Start="0,0"
-              End="-316.75,414.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,140.500851788756" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,140.500851788756"
-                    Point2="0,144.500851788756"
-                    Point3="-4,144.500851788756" />
-                  <mssgle:LineSegment
-                    End="-312.75,144.500851788756" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-312.75,144.500851788756"
-                    Point2="-316.75,144.500851788756"
-                    Point3="-316.75,148.500851788756" />
-                  <mssgle:LineSegment
-                    End="-316.75,414.5" />
+                    End="-245.75,224" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19503,30 +19302,30 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 25]"
-          TopLeft="521.333333333333,973">
+          TopLeft="538.25,973">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="256.666666666667,309"
+              EndConnector="229.75,233"
               Start="0,0"
-              End="256.666666666667,301.5">
+              End="229.75,225.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,150.349653326846" />
+                    End="0,96.7990257423285" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,150.349653326846"
-                    Point2="0,154.349653326846"
-                    Point3="4,154.349653326846" />
+                    Point1="0,96.7990257423285"
+                    Point2="0,100.799025742329"
+                    Point3="4,100.799025742329" />
                   <mssgle:LineSegment
-                    End="252.666666666667,154.349653326846" />
+                    End="225.75,100.799025742329" />
                   <mssgle:CubicBezierSegment
-                    Point1="252.666666666667,154.349653326846"
-                    Point2="256.666666666667,154.349653326846"
-                    Point3="256.666666666667,158.349653326846" />
+                    Point1="225.75,100.799025742329"
+                    Point2="229.75,100.799025742329"
+                    Point3="229.75,104.799025742329" />
                   <mssgle:LineSegment
-                    End="256.666666666667,301.5" />
+                    End="229.75,225.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19537,18 +19336,18 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 26]"
-          TopLeft="838.166666666667,975">
+          TopLeft="828.166666666667,976">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,307"
+              EndConnector="0,230"
               Start="0,0"
-              End="0,299.5">
+              End="0,222.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,299.5" />
+                    End="0,222.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19559,18 +19358,18 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 27]"
-          TopLeft="1107.25,1091">
+          TopLeft="1110.75,1092">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,192"
+              EndConnector="0,115"
               Start="0,0"
-              End="0,184.5">
+              End="0,107.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,184.5" />
+                    End="0,107.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19581,64 +19380,30 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 28]"
-          TopLeft="778,975">
+          TopLeft="765.666666666667,976">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-156.333333333333,319"
+              EndConnector="-217,230"
               Start="0,0"
-              End="-156.333333333333,311.5">
+              End="-217,222.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,169.301353730891" />
+                    End="0,111.079016465854" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,169.301353730891"
-                    Point2="0,173.301353730891"
-                    Point3="-4,173.301353730891" />
+                    Point1="0,111.079016465854"
+                    Point2="0,115.079016465854"
+                    Point3="-4,115.079016465854" />
                   <mssgle:LineSegment
-                    End="-152.333333333333,173.301353730891" />
+                    End="-213,115.079016465854" />
                   <mssgle:CubicBezierSegment
-                    Point1="-152.333333333333,173.301353730891"
-                    Point2="-156.333333333333,173.301353730891"
-                    Point3="-156.333333333333,177.301353730891" />
+                    Point1="-213,115.079016465854"
+                    Point2="-217,115.079016465854"
+                    Point3="-217,119.079016465854" />
                   <mssgle:LineSegment
-                    End="-156.333333333333,311.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 29]"
-          TopLeft="191.5,1097">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="397,197"
-              Start="0,0"
-              End="397,189.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,94.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,94.5"
-                    Point2="0,98.5"
-                    Point3="4,98.5" />
-                  <mssgle:LineSegment
-                    End="393,98.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="393,98.5"
-                    Point2="397,98.5"
-                    Point3="397,102.5" />
-                  <mssgle:LineSegment
-                    End="397,189.5" />
+                    End="-217,222.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19683,30 +19448,30 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 30]"
-          TopLeft="538.75,1336">
+          TopLeft="548.666666666667,1248">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-75.75,61"
+              EndConnector="95.8333333333334,96"
               Start="0,0"
-              End="-75.75,53.5">
+              End="95.8333333333334,88.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.3900520997618" />
+                    End="0,34.8418024928092" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,22.3900520997618"
-                    Point2="0,26.3900520997618"
-                    Point3="-4,26.3900520997618" />
+                    Point1="0,34.8418024928092"
+                    Point2="0,38.8418024928092"
+                    Point3="4,38.8418024928092" />
                   <mssgle:LineSegment
-                    End="-71.75,26.3900520997618" />
+                    End="91.8333333333334,38.8418024928092" />
                   <mssgle:CubicBezierSegment
-                    Point1="-71.75,26.3900520997618"
-                    Point2="-75.75,26.3900520997618"
-                    Point3="-75.75,30.3900520997618" />
+                    Point1="91.8333333333334,38.8418024928092"
+                    Point2="95.8333333333334,38.8418024928092"
+                    Point3="95.8333333333334,42.8418024928092" />
                   <mssgle:LineSegment
-                    End="-75.75,53.5" />
+                    End="95.8333333333334,88.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19716,31 +19481,31 @@ WHERE [RowNumber] = 1;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 32]"
-          TopLeft="467.2,973">
+          Id="Package.PrecedenceConstraints[Constraint 31]"
+          TopLeft="523.5,104">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="62.8,558"
+              EndConnector="132.166666666667,61"
               Start="0,0"
-              End="62.8,550.5">
+              End="132.166666666667,53.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,245.300471945464" />
+                    End="0,32.3493150684932" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,245.300471945464"
-                    Point2="0,249.300471945464"
-                    Point3="4,249.300471945464" />
+                    Point1="0,32.3493150684932"
+                    Point2="0,36.3493150684932"
+                    Point3="4,36.3493150684932" />
                   <mssgle:LineSegment
-                    End="58.8,249.300471945464" />
+                    End="128.166666666667,36.3493150684932" />
                   <mssgle:CubicBezierSegment
-                    Point1="58.8,249.300471945464"
-                    Point2="62.8,249.300471945464"
-                    Point3="62.8,253.300471945464" />
+                    Point1="128.166666666667,36.3493150684932"
+                    Point2="132.166666666667,36.3493150684932"
+                    Point3="132.166666666667,40.3493150684932" />
                   <mssgle:LineSegment
-                    End="62.8,550.5" />
+                    End="132.166666666667,53.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19751,30 +19516,30 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 33]"
-          TopLeft="177.5,1347.5">
+          TopLeft="157.5,1246.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="319.833333333333,183.5"
+              EndConnector="39.5,304.5"
               Start="0,0"
-              End="319.833333333333,176">
+              End="39.5,297">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,87.7288896047122" />
+                    End="0,168.543249481632" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,87.7288896047122"
-                    Point2="0,91.7288896047122"
-                    Point3="4,91.7288896047122" />
+                    Point1="0,168.543249481632"
+                    Point2="0,172.543249481632"
+                    Point3="4,172.543249481632" />
                   <mssgle:LineSegment
-                    End="315.833333333333,91.7288896047122" />
+                    End="35.5,172.543249481632" />
                   <mssgle:CubicBezierSegment
-                    Point1="315.833333333333,91.7288896047122"
-                    Point2="319.833333333333,91.7288896047122"
-                    Point3="319.833333333333,95.7288896047122" />
+                    Point1="35.5,172.543249481632"
+                    Point2="39.5,172.543249481632"
+                    Point3="39.5,176.543249481632" />
                   <mssgle:LineSegment
-                    End="319.833333333333,176" />
+                    End="39.5,297" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19785,30 +19550,30 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 34]"
-          TopLeft="588.5,1336">
+          TopLeft="482.333333333333,1248">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-25.8333333333334,195"
+              EndConnector="-236.333333333333,303"
               Start="0,0"
-              End="-25.8333333333334,187.5">
+              End="-236.333333333333,295.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,112.089494163424" />
+                    End="0,118.594439117929" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,112.089494163424"
-                    Point2="0,116.089494163424"
-                    Point3="-4,116.089494163424" />
+                    Point1="0,118.594439117929"
+                    Point2="0,122.594439117929"
+                    Point3="-4,122.594439117929" />
                   <mssgle:LineSegment
-                    End="-21.8333333333334,116.089494163424" />
+                    End="-232.333333333333,122.594439117929" />
                   <mssgle:CubicBezierSegment
-                    Point1="-21.8333333333334,116.089494163424"
-                    Point2="-25.8333333333334,116.089494163424"
-                    Point3="-25.8333333333334,120.089494163424" />
+                    Point1="-232.333333333333,122.594439117929"
+                    Point2="-236.333333333333,122.594439117929"
+                    Point3="-236.333333333333,126.594439117929" />
                   <mssgle:LineSegment
-                    End="-25.8333333333334,187.5" />
+                    End="-236.333333333333,295.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19819,98 +19584,30 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 35]"
-          TopLeft="244.5,1347.5">
+          TopLeft="224.5,1246.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="500.9,160.5"
+              EndConnector="523.9,303.5"
               Start="0,0"
-              End="500.9,153">
+              End="523.9,296">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,94.929085226709" />
+                    End="0,183.071510070444" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,94.929085226709"
-                    Point2="0,98.929085226709"
-                    Point3="4,98.929085226709" />
+                    Point1="0,183.071510070444"
+                    Point2="0,187.071510070444"
+                    Point3="4,187.071510070444" />
                   <mssgle:LineSegment
-                    End="496.9,98.929085226709" />
+                    End="519.9,187.071510070444" />
                   <mssgle:CubicBezierSegment
-                    Point1="496.9,98.929085226709"
-                    Point2="500.9,98.929085226709"
-                    Point3="500.9,102.929085226709" />
+                    Point1="519.9,187.071510070444"
+                    Point2="523.9,187.071510070444"
+                    Point3="523.9,191.071510070444" />
                   <mssgle:LineSegment
-                    End="500.9,153" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 36]"
-          TopLeft="815,975">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-9,533"
-              Start="0,0"
-              End="-9,525.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,234.246418338109" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,234.246418338109"
-                    Point2="0,238.246418338109"
-                    Point3="-4,238.246418338109" />
-                  <mssgle:LineSegment
-                    End="-5,238.246418338109" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-5,238.246418338109"
-                    Point2="-9,238.246418338109"
-                    Point3="-9,242.246418338109" />
-                  <mssgle:LineSegment
-                    End="-9,525.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 37]"
-          TopLeft="638.25,1336">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="187.95,172"
-              Start="0,0"
-              End="187.95,164.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,63.3153936569687" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,63.3153936569687"
-                    Point2="0,67.3153936569687"
-                    Point3="4,67.3153936569687" />
-                  <mssgle:LineSegment
-                    End="183.95,67.3153936569687" />
-                  <mssgle:CubicBezierSegment
-                    Point1="183.95,67.3153936569687"
-                    Point2="187.95,67.3153936569687"
-                    Point3="187.95,71.3153936569687" />
-                  <mssgle:LineSegment
-                    End="187.95,164.5" />
+                    End="523.9,296" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19921,64 +19618,30 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 38]"
-          TopLeft="433.5,1439">
+          TopLeft="644.5,1386">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="372.5,69"
+              EndConnector="144.3,164"
               Start="0,0"
-              End="372.5,61.5">
+              End="144.3,156.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.5" />
+                    End="0,86.7270811380401" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,30.5"
-                    Point2="0,34.5"
-                    Point3="4,34.5" />
+                    Point1="0,86.7270811380401"
+                    Point2="0,90.7270811380401"
+                    Point3="4,90.7270811380401" />
                   <mssgle:LineSegment
-                    End="368.5,34.5" />
+                    End="140.3,90.7270811380401" />
                   <mssgle:CubicBezierSegment
-                    Point1="368.5,34.5"
-                    Point2="372.5,34.5"
-                    Point3="372.5,38.5" />
+                    Point1="140.3,90.7270811380401"
+                    Point2="144.3,90.7270811380401"
+                    Point3="144.3,94.7270811380401" />
                   <mssgle:LineSegment
-                    End="372.5,61.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 39]"
-          TopLeft="1073.66666666667,1091">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-234,417"
-              Start="0,0"
-              End="-234,409.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,204.437123039807" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,204.437123039807"
-                    Point2="0,208.437123039807"
-                    Point3="-4,208.437123039807" />
-                  <mssgle:LineSegment
-                    End="-230,208.437123039807" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-230,208.437123039807"
-                    Point2="-234,208.437123039807"
-                    Point3="-234,212.437123039807" />
-                  <mssgle:LineSegment
-                    End="-234,409.5" />
+                    End="144.3,156.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20023,30 +19686,30 @@ WHERE [RowNumber] = 1;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 40]"
-          TopLeft="1071,1325">
+          TopLeft="1113,1249">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-204.4,183"
+              EndConnector="-243.4,301"
               Start="0,0"
-              End="-204.4,175.5">
+              End="-243.4,293.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,124.614457831325" />
+                    End="0,207.546184738956" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,124.614457831325"
-                    Point2="0,128.614457831325"
-                    Point3="-4,128.614457831325" />
+                    Point1="0,207.546184738956"
+                    Point2="0,211.546184738956"
+                    Point3="-4,211.546184738956" />
                   <mssgle:LineSegment
-                    End="-200.4,128.614457831325" />
+                    End="-239.4,211.546184738956" />
                   <mssgle:CubicBezierSegment
-                    Point1="-200.4,128.614457831325"
-                    Point2="-204.4,128.614457831325"
-                    Point3="-204.4,132.614457831325" />
+                    Point1="-239.4,211.546184738956"
+                    Point2="-243.4,211.546184738956"
+                    Point3="-243.4,215.546184738956" />
                   <mssgle:LineSegment
-                    End="-204.4,175.5" />
+                    End="-243.4,293.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20056,65 +19719,31 @@ WHERE [RowNumber] = 1;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 41]"
-          TopLeft="156.625,1097">
+          Id="Package.PrecedenceConstraints[Constraint 43]"
+          TopLeft="868,103">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="324.375,434"
+              EndConnector="-137.666666666667,62"
               Start="0,0"
-              End="324.375,426.5">
+              End="-137.666666666667,54.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,253.347988386562" />
+                    End="0,32.945205479452" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,253.347988386562"
-                    Point2="0,257.347988386562"
-                    Point3="4,257.347988386562" />
+                    Point1="0,32.945205479452"
+                    Point2="0,36.945205479452"
+                    Point3="-4,36.945205479452" />
                   <mssgle:LineSegment
-                    End="320.375,257.347988386562" />
+                    End="-133.666666666667,36.945205479452" />
                   <mssgle:CubicBezierSegment
-                    Point1="320.375,257.347988386562"
-                    Point2="324.375,257.347988386562"
-                    Point3="324.375,261.347988386562" />
+                    Point1="-133.666666666667,36.945205479452"
+                    Point2="-137.666666666667,36.945205479452"
+                    Point3="-137.666666666667,40.945205479452" />
                   <mssgle:LineSegment
-                    End="324.375,426.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 42]"
-          TopLeft="226.375,1097">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="512.291666666667,411"
-              Start="0,0"
-              End="512.291666666667,403.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,274.851345489876" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,274.851345489876"
-                    Point2="0,278.851345489876"
-                    Point3="4,278.851345489876" />
-                  <mssgle:LineSegment
-                    End="508.291666666667,278.851345489876" />
-                  <mssgle:CubicBezierSegment
-                    Point1="508.291666666667,278.851345489876"
-                    Point2="512.291666666667,278.851345489876"
-                    Point3="512.291666666667,282.851345489876" />
-                  <mssgle:LineSegment
-                    End="512.291666666667,403.5" />
+                    End="-137.666666666667,54.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20677,12 +20306,12 @@ WHERE [RowNumber] = 1;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="220,42"
+          Size="221,42"
           Id="Package\Ensure FeeExtract table exists"
           TopLeft="27.5,10.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="137,52.5">
+          TopLeft="137.25,52.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -20733,8 +20362,8 @@ WHERE [RowNumber] = 1;</property>
           ParentId="Package"
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="270,316"
-          Size="270,359"
+          PanelSize="270,350"
+          Size="270,393"
           Id="b50871d4-1b79-40be-bc31-afa0cf06ea5c"
           TopLeft="535.5,289.5">
           <GroupLayout.ChildrenIds>
@@ -20747,78 +20376,6 @@ WHERE [RowNumber] = 1;</property>
             <s:String>Package.PrecedenceConstraints[Constraint 6]</s:String>
           </GroupLayout.ChildrenIds>
         </GroupLayout>
-        <NodeLayout
-          Size="220,42"
-          Id="Package\Ensure needed functions exist"
-          TopLeft="758,61" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 31]"
-          TopLeft="523.5,104">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="132.166666666667,61"
-              Start="0,0"
-              End="132.166666666667,53.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.3493150684932" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32.3493150684932"
-                    Point2="0,36.3493150684932"
-                    Point3="4,36.3493150684932" />
-                  <mssgle:LineSegment
-                    End="128.166666666667,36.3493150684932" />
-                  <mssgle:CubicBezierSegment
-                    Point1="128.166666666667,36.3493150684932"
-                    Point2="132.166666666667,36.3493150684932"
-                    Point3="132.166666666667,40.3493150684932" />
-                  <mssgle:LineSegment
-                    End="132.166666666667,53.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 43]"
-          TopLeft="868,103">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-137.666666666667,62"
-              Start="0,0"
-              End="-137.666666666667,54.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.945205479452" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32.945205479452"
-                    Point2="0,36.945205479452"
-                    Point3="-4,36.945205479452" />
-                  <mssgle:LineSegment
-                    End="-133.666666666667,36.945205479452" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-133.666666666667,36.945205479452"
-                    Point2="-137.666666666667,36.945205479452"
-                    Point3="-137.666666666667,40.945205479452" />
-                  <mssgle:LineSegment
-                    End="-137.666666666667,54.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -20826,7 +20383,7 @@ WHERE [RowNumber] = 1;</property>
     design-time-name="Package\Populate BusinessDim table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="233,42"
           Id="Package\Populate BusinessDim table\Insert business data to database"
@@ -20854,7 +20411,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -20890,7 +20449,7 @@ WHERE [RowNumber] = 1;</property>
     design-time-name="Package\Populate FeeDim table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="153,42"
           Id="Package\Populate FeeDim table\Join by industry"
@@ -20938,7 +20497,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20960,7 +20521,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20982,7 +20545,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21016,7 +20581,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21050,7 +20617,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21072,7 +20641,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21165,7 +20736,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21224,7 +20797,7 @@ WHERE [RowNumber] = 1;</property>
     design-time-name="Package\Populate FeeStage table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="202,42"
           Id="Package\Populate FeeStage table\Get extracted license data"
@@ -21280,7 +20853,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21314,7 +20889,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21336,7 +20913,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21358,7 +20937,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21380,7 +20961,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21429,7 +21012,7 @@ WHERE [RowNumber] = 1;</property>
     design-time-name="Package\Populate IndustryDim table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="230,42"
           Id="Package\Populate IndustryDim table\Insert industry data to database"
@@ -21477,7 +21060,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21511,7 +21096,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21545,7 +21132,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21567,7 +21156,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21589,7 +21180,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21611,7 +21204,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21662,55 +21257,25 @@ WHERE [RowNumber] = 1;</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="245,42"
-          Id="Package\Populate LicenseExtract table\Insert raw license data to database"
-          TopLeft="354,555" />
-        <NodeLayout
           Size="218,42"
           Id="Package\Populate LicenseExtract table\Get license data from dataset"
           TopLeft="514,114" />
         <NodeLayout
-          Size="149,42"
-          Id="Package\Populate LicenseExtract table\Redirect errors"
-          TopLeft="680,272" />
+          Size="245,42"
+          Id="Package\Populate LicenseExtract table\Insert raw license data to database"
+          TopLeft="354,555" />
+        <NodeLayout
+          Size="187,42"
+          Id="Package\Populate LicenseExtract table\Verify date correctness"
+          TopLeft="387,411" />
         <NodeLayout
           Size="191,42"
           Id="Package\Populate LicenseExtract table\Convert strings to dates"
           TopLeft="386,274" />
-        <EdgeLayout
-          Id="Package\Populate LicenseExtract table.Paths[Flat File Source Output]"
-          TopLeft="588,156">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-106.5,118"
-              Start="0,0"
-              End="-106.5,110.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,43.7158469945355" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,43.7158469945355"
-                    Point2="0,47.7158469945355"
-                    Point3="-4,47.7158469945355" />
-                  <mssgle:LineSegment
-                    End="-102.5,47.7158469945355" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-102.5,47.7158469945355"
-                    Point2="-106.5,47.7158469945355"
-                    Point3="-106.5,51.7158469945355" />
-                  <mssgle:LineSegment
-                    End="-106.5,110.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Populate LicenseExtract table\Redirect errors"
+          TopLeft="680,272" />
         <EdgeLayout
           Id="Package\Populate LicenseExtract table.Paths[Flat File Source Error Output]"
           TopLeft="658,156">
@@ -21747,32 +21312,6 @@ WHERE [RowNumber] = 1;</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="187,42"
-          Id="Package\Populate LicenseExtract table\Verify date correctness"
-          TopLeft="387,411" />
-        <EdgeLayout
-          Id="Package\Populate LicenseExtract table.Paths[Derived Column Output]"
-          TopLeft="481,316">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,95"
-              Start="0,0"
-              End="0,87.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,87.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Populate LicenseExtract table.Paths[Derived Column Output1]"
           TopLeft="478.5,453">
@@ -21792,7 +21331,69 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate LicenseExtract table.Paths[Derived Column Output]"
+          TopLeft="481,316">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,95"
+              Start="0,0"
+              End="0,87.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,87.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate LicenseExtract table.Paths[Flat File Source Output]"
+          TopLeft="588,156">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-106.5,118"
+              Start="0,0"
+              End="-106.5,110.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.7158469945355" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,43.7158469945355"
+                    Point2="0,47.7158469945355"
+                    Point3="-4,47.7158469945355" />
+                  <mssgle:LineSegment
+                    End="-102.5,47.7158469945355" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-102.5,47.7158469945355"
+                    Point2="-106.5,47.7158469945355"
+                    Point3="-106.5,51.7158469945355" />
+                  <mssgle:LineSegment
+                    End="-106.5,110.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -21815,23 +21416,19 @@ WHERE [RowNumber] = 1;</property>
     design-time-name="Package\Populate LicenseFact table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="175,42"
-          Id="Package\Populate LicenseFact table\Sort business data 2"
-          TopLeft="606,321" />
-        <NodeLayout
-          Size="205,43"
-          Id="Package\Populate LicenseFact table\Extract staged license data"
-          TopLeft="197,92" />
-        <NodeLayout
-          Size="166,42"
-          Id="Package\Populate LicenseFact table\Sort business data"
-          TopLeft="451,208" />
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="187,42"
           Id="Package\Populate LicenseFact table\Get industry dimension"
           TopLeft="851,84" />
+        <NodeLayout
+          Size="214,42"
+          Id="Package\Populate LicenseFact table\Join data on business names"
+          TopLeft="306,319" />
+        <NodeLayout
+          Size="199,42"
+          Id="Package\Populate LicenseFact table\Calculate license duration"
+          TopLeft="844,439" />
         <NodeLayout
           Size="157,42"
           Id="Package\Populate LicenseFact table\Sort license data"
@@ -21841,65 +21438,29 @@ WHERE [RowNumber] = 1;</property>
           Id="Package\Populate LicenseFact table\Get business dimension"
           TopLeft="441,91" />
         <NodeLayout
-          Size="178,42"
-          Id="Package\Populate LicenseFact table\Join data on industry"
-          TopLeft="856,319" />
-        <NodeLayout
-          Size="199,42"
-          Id="Package\Populate LicenseFact table\Calculate license duration"
-          TopLeft="844,439" />
-        <NodeLayout
           Size="163,42"
           Id="Package\Populate LicenseFact table\Sort industry data"
           TopLeft="861,198" />
         <NodeLayout
+          Size="175,42"
+          Id="Package\Populate LicenseFact table\Sort business data 2"
+          TopLeft="606,321" />
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Populate LicenseFact table\Join data on industry"
+          TopLeft="856,319" />
+        <NodeLayout
           Size="224,42"
           Id="Package\Populate LicenseFact table\Insert license data to database"
           TopLeft="831,560" />
-        <EdgeLayout
-          Id="Package\Populate LicenseFact table.Paths[OLE DB Source Output2]"
-          TopLeft="943.5,126">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,72"
-              Start="0,0"
-              End="0,64.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,64.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Populate LicenseFact table.Paths[OLE DB Source Output1]"
-          TopLeft="535,133">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,75"
-              Start="0,0"
-              End="0,67.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,67.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Populate LicenseFact table\Sort business data"
+          TopLeft="451,208" />
+        <NodeLayout
+          Size="205,43"
+          Id="Package\Populate LicenseFact table\Extract staged license data"
+          TopLeft="197,92" />
         <EdgeLayout
           Id="Package\Populate LicenseFact table.Paths[OLE DB Source Output]"
           TopLeft="298.5,135">
@@ -21919,7 +21480,33 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate LicenseFact table.Paths[Merge Join Output1]"
+          TopLeft="520,341">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="86,0"
+              Start="0,0"
+              End="78.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="78.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21941,7 +21528,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -21963,89 +21552,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Populate LicenseFact table.Paths[Sort Output1]"
-          TopLeft="943.75,240">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,79"
-              Start="0,0"
-              End="0,71.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,71.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Populate LicenseFact table.Paths[Sort Output]"
-          TopLeft="781,341">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="75,0"
-              Start="0,0"
-              End="67.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="67.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="214,42"
-          Id="Package\Populate LicenseFact table\Join data on business names"
-          TopLeft="306,319" />
-        <EdgeLayout
-          Id="Package\Populate LicenseFact table.Paths[Sort Output2]"
-          TopLeft="297.5,249">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="81.1666666666666,70"
-              Start="0,0"
-              End="81.1666666666666,62.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.6883116883117" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,37.6883116883117"
-                    Point2="0,41.6883116883117"
-                    Point3="4,41.6883116883117" />
-                  <mssgle:LineSegment
-                    End="77.1666666666666,41.6883116883117" />
-                  <mssgle:CubicBezierSegment
-                    Point1="77.1666666666666,41.6883116883117"
-                    Point2="81.1666666666666,41.6883116883117"
-                    Point3="81.1666666666666,45.6883116883117" />
-                  <mssgle:LineSegment
-                    End="81.1666666666666,62.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22079,47 +21588,146 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate LicenseFact table.Paths[Merge Join Output1]"
-          TopLeft="520,341">
+          Id="Package\Populate LicenseFact table.Paths[Sort Output2]"
+          TopLeft="297.5,249">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="86,0"
+              EndConnector="81.1666666666666,70"
               Start="0,0"
-              End="78.5,0">
+              End="81.1666666666666,62.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="78.5,0" />
+                    End="0,37.6883116883117" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.6883116883117"
+                    Point2="0,41.6883116883117"
+                    Point3="4,41.6883116883117" />
+                  <mssgle:LineSegment
+                    End="77.1666666666666,41.6883116883117" />
+                  <mssgle:CubicBezierSegment
+                    Point1="77.1666666666666,41.6883116883117"
+                    Point2="81.1666666666666,41.6883116883117"
+                    Point3="81.1666666666666,45.6883116883117" />
+                  <mssgle:LineSegment
+                    End="81.1666666666666,62.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate LicenseFact table.Paths[Sort Output1]"
+          TopLeft="943.75,240">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,79"
+              Start="0,0"
+              End="0,71.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,71.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate LicenseFact table.Paths[Sort Output]"
+          TopLeft="781,341">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="75,0"
+              Start="0,0"
+              End="67.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="67.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate LicenseFact table.Paths[OLE DB Source Output2]"
+          TopLeft="943.5,126">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,72"
+              Start="0,0"
+              End="0,64.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate LicenseFact table.Paths[OLE DB Source Output1]"
+          TopLeft="535,133">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,75"
+              Start="0,0"
+              End="0,67.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Populate LicenseFact table\Extract staged license data">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Populate LicenseFact table\Get industry dimension">
     <Properties>
@@ -22159,45 +21767,36 @@ WHERE [RowNumber] = 1;</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Populate LicenseFact table\Extract staged license data">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Populate LicenseStage table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="202,42"
-          Id="Package\Populate LicenseStage table\Get extracted license data"
-          TopLeft="610,153" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="122,42"
           Id="Package\Populate LicenseStage table\Sort data"
           TopLeft="653,292" />
         <NodeLayout
+          Size="202,42"
+          Id="Package\Populate LicenseStage table\Get extracted license data"
+          TopLeft="610,153" />
+        <NodeLayout
           Size="224,42"
           Id="Package\Populate LicenseStage table\Insert license data to database"
           TopLeft="599,438" />
-        <EdgeLayout
-          Id="Package\Populate LicenseStage table.Paths[Sort Output]"
-          TopLeft="712.5,334">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,104"
-              Start="0,0"
-              End="0,96.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,96.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Populate LicenseStage table.Paths[OLE DB Source Output]"
           TopLeft="712.5,195">
@@ -22217,7 +21816,33 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate LicenseStage table.Paths[Sort Output]"
+          TopLeft="712.5,334">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,104"
+              Start="0,0"
+              End="0,96.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,96.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -22297,7 +21922,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22356,7 +21983,7 @@ WHERE [RowNumber] = 1;</property>
     design-time-name="Package\Populate PaymentFact table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="202,42"
           Id="Package\Populate PaymentFact table\Sort by fee sequence ID 1"
@@ -22476,99 +22103,13 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Populate PaymentFact table.Paths[Sort Output8]"
-          TopLeft="1313,670">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="119,0"
-              Start="0,0"
-              End="111.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="111.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Populate PaymentFact table.Paths[Sort Output7]"
-          TopLeft="1052,575">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="66,0"
-              Start="0,0"
-              End="58.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="58.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Populate PaymentFact table.Paths[Sort Output6]"
-          TopLeft="1214.25,497">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,57"
-              Start="0,0"
-              End="0,49.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,49.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Populate PaymentFact table.Paths[Sort Output5]"
-          TopLeft="950.75,398">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,55"
-              Start="0,0"
-              End="0,47.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Populate PaymentFact table.Paths[Sort Output4]"
           TopLeft="746,474.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -22586,11 +22127,13 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate PaymentFact table.Paths[Sort Output3]"
+          Id="Package\Populate PaymentFact table.Paths[Sort Output7]"
           TopLeft="1528.25,599">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -22608,11 +22151,13 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate PaymentFact table.Paths[Sort Output2]"
+          Id="Package\Populate PaymentFact table.Paths[Sort Output6]"
           TopLeft="667.75,296">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -22630,11 +22175,13 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate PaymentFact table.Paths[Sort Output1]"
+          Id="Package\Populate PaymentFact table.Paths[Sort Output5]"
           TopLeft="391,367.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -22652,11 +22199,13 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate PaymentFact table.Paths[Sort Output]"
+          Id="Package\Populate PaymentFact table.Paths[Sort Output4]"
           TopLeft="420,185">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -22686,7 +22235,105 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate PaymentFact table.Paths[Sort Output3]"
+          TopLeft="1313,670">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="119,0"
+              Start="0,0"
+              End="111.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="111.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate PaymentFact table.Paths[Sort Output2]"
+          TopLeft="1052,575">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="66,0"
+              Start="0,0"
+              End="58.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="58.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate PaymentFact table.Paths[Sort Output1]"
+          TopLeft="1214.25,497">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57"
+              Start="0,0"
+              End="0,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate PaymentFact table.Paths[Sort Output]"
+          TopLeft="950.75,398">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55"
+              Start="0,0"
+              End="0,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22708,7 +22355,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22730,7 +22379,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22752,7 +22403,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22774,7 +22427,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22796,7 +22451,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22818,7 +22475,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22840,7 +22499,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22862,7 +22523,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22884,7 +22547,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22906,7 +22571,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -22928,7 +22595,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -23029,7 +22698,7 @@ WHERE [RowNumber] = 1;</property>
     design-time-name="Package\Populate PaymentStage table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="140,42"
           Id="Package\Populate PaymentStage table\Sort fee data"
@@ -23085,7 +22754,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23119,7 +22790,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23141,7 +22814,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23163,7 +22838,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23185,7 +22862,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -23236,9 +22915,17 @@ WHERE [RowNumber] = 1;</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="242,42"
-          Id="Package\Populate TimeDim table\Extract dates from staged fee data"
-          TopLeft="728,195" />
+          Size="260,42"
+          Id="Package\Populate TimeDim table\Extract dates from staged license data"
+          TopLeft="367,195" />
+        <NodeLayout
+          Size="147,42"
+          Id="Package\Populate TimeDim table\Filter null date"
+          TopLeft="540,726" />
+        <NodeLayout
+          Size="120,42"
+          Id="Package\Populate TimeDim table\Multicast"
+          TopLeft="431,278" />
         <NodeLayout
           Size="237,42"
           Id="Package\Populate TimeDim table\Sort dates and remove duplicates"
@@ -23256,13 +22943,9 @@ WHERE [RowNumber] = 1;</property>
           Id="Package\Populate TimeDim table\Sort LicenseExpirationDates"
           TopLeft="511,385" />
         <NodeLayout
-          Size="120,42"
-          Id="Package\Populate TimeDim table\Multicast"
-          TopLeft="431,278" />
-        <NodeLayout
-          Size="260,42"
-          Id="Package\Populate TimeDim table\Extract dates from staged license data"
-          TopLeft="367,195" />
+          Size="242,42"
+          Id="Package\Populate TimeDim table\Extract dates from staged fee data"
+          TopLeft="728,195" />
         <NodeLayout
           Size="145,42"
           Id="Package\Populate TimeDim table\Sort FeeDates"
@@ -23275,6 +22958,30 @@ WHERE [RowNumber] = 1;</property>
           Size="202,42"
           Id="Package\Populate TimeDim table\Sort LicenseCreationDates"
           TopLeft="271,385" />
+        <EdgeLayout
+          Id="Package\Populate TimeDim table.Paths[Date is not null]"
+          TopLeft="613.75,768">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,89"
+              Start="0,0"
+              End="0,81.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,81.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-33.71712890625,35.87548828125,67.4342578125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Populate TimeDim table.Paths[Union All Output 1]"
           TopLeft="616.5,554">
@@ -23294,7 +23001,33 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate TimeDim table.Paths[Sort Output3]"
+          TopLeft="615.5,652">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,74"
+              Start="0,0"
+              End="0,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23328,7 +23061,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23362,7 +23097,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23384,7 +23121,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23406,7 +23145,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23428,7 +23169,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23462,7 +23205,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23496,7 +23241,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23518,56 +23265,8 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="147,42"
-          Id="Package\Populate TimeDim table\Filter null date"
-          TopLeft="540,726" />
-        <EdgeLayout
-          Id="Package\Populate TimeDim table.Paths[Sort Output3]"
-          TopLeft="615.5,652">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,74"
-              Start="0,0"
-              End="0,66.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,66.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Populate TimeDim table.Paths[Date is not null]"
-          TopLeft="613.75,768">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,89"
-              Start="0,0"
-              End="0,81.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,81.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-33.71712890625,35.87548828125,67.4342578125,9.7490234375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -23575,7 +23274,7 @@ WHERE [RowNumber] = 1;</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Populate TimeDim table\Extract dates from staged fee data">
+    design-time-name="Package\Populate TimeDim table\Extract dates from staged license data">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -23601,7 +23300,7 @@ WHERE [RowNumber] = 1;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Populate TimeDim table\Extract dates from staged license data">
+    design-time-name="Package\Populate TimeDim table\Extract dates from staged fee data">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -23617,7 +23316,7 @@ WHERE [RowNumber] = 1;</property>
     design-time-name="Package\Populate TransactionTypeDim table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="215,42"
           Id="Package\Populate TransactionTypeDim table\Extract staged payment data"
@@ -23649,7 +23348,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -23671,7 +23372,9 @@ WHERE [RowNumber] = 1;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

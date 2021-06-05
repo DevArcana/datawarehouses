@@ -1,0 +1,1241 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/3/2021 10:37:45 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-6OSGPE0"
+  DTS:CreatorName="DESKTOP-6OSGPE0\Scytlee"
+  DTS:DTSID="{9F1E57FB-3040-4320-BC0A-9564E5AE698A}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.152"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{F09FD046-9556-4BC1-BE03-676D79A28BC7}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Licenses]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{EF9162DA-BED7-4C94-9A7C-1293CD2DEADB}"
+      DTS:ObjectName="Licenses">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Repos\datawarehouses\datasets\Legally_Operating_Businesses.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DCA License Number"
+              DTS:DTSID="{51962FF0-7935-429C-BFC7-EA1FED5E4325}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="License Type"
+              DTS:DTSID="{4D2E666D-DEB7-4DFE-A57A-D1ECFC187092}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="License Expiration Date"
+              DTS:DTSID="{68B1E7B2-500E-4BE4-B947-A383E3F8D2CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="License Status"
+              DTS:DTSID="{F18D8DE2-139D-47C8-870B-48996A233D88}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="License Creation Date"
+              DTS:DTSID="{9852F3A2-0B67-4CD8-BFFF-4E3F091C57EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Industry"
+              DTS:DTSID="{6BDEAA50-613C-4EC9-B2DC-0B12534C09AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="300"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Business Name"
+              DTS:DTSID="{AF29AA27-4361-472F-AD20-843402BE5A27}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Business Name 2"
+              DTS:DTSID="{7B55C3BE-E2EB-4928-B79F-88855B0A4AE0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Address Building"
+              DTS:DTSID="{3A1D496D-6A8C-4F5D-B865-50AE917C429A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="75"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Address Street Name"
+              DTS:DTSID="{79C217CE-BAD2-45F8-80F1-2E2B9EE11DD0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="75"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Secondary Address Street Name"
+              DTS:DTSID="{6AFC4444-26F5-4CA3-8EA1-9ACA87A54A57}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Address City"
+              DTS:DTSID="{B9B5BFB6-4490-4ADD-BAA5-4BF4590AE730}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Address State"
+              DTS:DTSID="{B866E09E-C134-4F8E-87B5-C460C3EBC033}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Address ZIP"
+              DTS:DTSID="{FECBA3A8-2A97-484B-ADBC-53850AF76345}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Contact Phone Number"
+              DTS:DTSID="{D2260A6E-0C94-4C4A-9D51-1334CFDEBCDE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Address Borough"
+              DTS:DTSID="{31ED4480-BB5C-4C23-9157-E2E574593829}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Borough Code"
+              DTS:DTSID="{F1B17501-6E72-4239-960A-8B1F11DE52E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Community Board"
+              DTS:DTSID="{FB6B3FE8-5D79-4252-BE09-309C46C07CA0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Council District"
+              DTS:DTSID="{BECEA7DC-5204-4494-877F-708AEEDDD495}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BIN"
+              DTS:DTSID="{F7BC99A5-2B5A-4763-B4A3-84C24DAFDE0F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BBL"
+              DTS:DTSID="{C0555496-6E00-40EA-A19B-FA61ADA98A3A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NTA"
+              DTS:DTSID="{D23AC96D-F31F-4AED-BB4B-2F97D021E4BE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Census Tract"
+              DTS:DTSID="{649A4598-7329-40AA-8D7B-A567B9405E26}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="300"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Detail"
+              DTS:DTSID="{F2C88AD0-A49B-41A6-86E2-B7FDA88A0493}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Longitude"
+              DTS:DTSID="{8FE81E0C-EDC6-45E2-BFB9-607DA738569C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Latitude"
+              DTS:DTSID="{EF59A340-6058-42FD-8D58-769106B0C7AB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Location"
+              DTS:DTSID="{0FD20BEF-6411-43F3-9E58-35154B2E24B8}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Licenses - errors]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{7969E795-3F83-41DB-816D-30A4CCE6F464}"
+      DTS:ObjectName="Licenses - errors">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Repos\datawarehouses\datasets\errors\Licenses - errors.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flat File Source Error Output Column"
+              DTS:DTSID="{25E31138-F193-45B9-838B-9829177EF5EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{4488224D-D059-46BA-ABF1-9DBABE0E2FD5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{391E9114-3653-4BED-874A-42EAAE6BFD29}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.Miniproject]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2AE594AF-1E0E-4046-88A5-B26D8D809332}"
+      DTS:ObjectName="LocalHost.Miniproject">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=.;Initial Catalog=Miniproject;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Extract license data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{a22c36b0-e551-4a75-ae1a-d84cbd6326fc}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Extract license data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Extract license data\Get license data from dataset"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Get license data from dataset"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Extract license data\Get license data from dataset.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Licenses]"
+                  connectionManagerRefId="Package.ConnectionManagers[Licenses]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[DCALicenseNumber]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[DCA License Number]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[DCALicenseNumber]"
+                      name="DCALicenseNumber"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[LicenseType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[License Type]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[LicenseType]"
+                      name="LicenseType"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[LicenseExpirationDate]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[License Expiration Date]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[LicenseExpirationDate]"
+                      name="LicenseExpirationDate"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[LicenseStatus]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[License Status]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[LicenseStatus]"
+                      name="LicenseStatus"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[LicenseCreationDate]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[License Creation Date]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[LicenseCreationDate]"
+                      name="LicenseCreationDate"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[Industry]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Industry]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[Industry]"
+                      name="Industry"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[BusinessName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Business Name]"
+                      length="300"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[BusinessName]"
+                      name="BusinessName"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[BusinessName2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Business Name 2]"
+                      length="100"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[BusinessName2]"
+                      name="BusinessName2"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[AddressBuilding]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Address Building]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[AddressBuilding]"
+                      name="AddressBuilding"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[AddressStreetName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Address Street Name]"
+                      length="75"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[AddressStreetName]"
+                      name="AddressStreetName"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[SecondaryAddressStreetName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Secondary Address Street Name]"
+                      length="75"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[SecondaryAddressStreetName]"
+                      name="SecondaryAddressStreetName"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[AddressCity]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Address City]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[AddressCity]"
+                      name="AddressCity"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[AddressState]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Address State]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[AddressState]"
+                      name="AddressState"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[AddressZIP]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Address ZIP]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[AddressZIP]"
+                      name="AddressZIP"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[ContactPhoneNumber]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Contact Phone Number]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[ContactPhoneNumber]"
+                      name="ContactPhoneNumber"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[AddressBorough]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Address Borough]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[AddressBorough]"
+                      name="AddressBorough"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[BoroughCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Borough Code]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[BoroughCode]"
+                      name="BoroughCode"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[CommunityBoard]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Community Board]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[CommunityBoard]"
+                      name="CommunityBoard"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[CouncilDistrict]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Council District]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[CouncilDistrict]"
+                      name="CouncilDistrict"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[BIN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[BIN]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[BIN]"
+                      name="BIN"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[BBL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[BBL]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[BBL]"
+                      name="BBL"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[NTA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[NTA]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[NTA]"
+                      name="NTA"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[CensusTract]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Census Tract]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[CensusTract]"
+                      name="CensusTract"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[Detail]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Detail]"
+                      length="300"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[Detail]"
+                      name="Detail"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[Longitude]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Longitude]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[Longitude]"
+                      name="Longitude"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[Latitude]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Latitude]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[Latitude]"
+                      name="Latitude"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[Location]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Location]"
+                      length="50"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].Columns[Location]"
+                      name="Location"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[DCA License Number]"
+                      dataType="wstr"
+                      length="50"
+                      name="DCA License Number" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[License Type]"
+                      dataType="wstr"
+                      length="50"
+                      name="License Type" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[License Expiration Date]"
+                      dataType="wstr"
+                      length="50"
+                      name="License Expiration Date" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[License Status]"
+                      dataType="wstr"
+                      length="50"
+                      name="License Status" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[License Creation Date]"
+                      dataType="wstr"
+                      length="50"
+                      name="License Creation Date" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Industry]"
+                      dataType="wstr"
+                      length="50"
+                      name="Industry" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Business Name]"
+                      dataType="wstr"
+                      length="300"
+                      name="Business Name" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Business Name 2]"
+                      dataType="wstr"
+                      length="100"
+                      name="Business Name 2" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Address Building]"
+                      dataType="wstr"
+                      length="50"
+                      name="Address Building" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Address Street Name]"
+                      dataType="wstr"
+                      length="75"
+                      name="Address Street Name" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Secondary Address Street Name]"
+                      dataType="wstr"
+                      length="75"
+                      name="Secondary Address Street Name" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Address City]"
+                      dataType="wstr"
+                      length="50"
+                      name="Address City" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Address State]"
+                      dataType="wstr"
+                      length="50"
+                      name="Address State" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Address ZIP]"
+                      dataType="wstr"
+                      length="50"
+                      name="Address ZIP" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Contact Phone Number]"
+                      dataType="wstr"
+                      length="50"
+                      name="Contact Phone Number" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Address Borough]"
+                      dataType="wstr"
+                      length="50"
+                      name="Address Borough" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Borough Code]"
+                      dataType="wstr"
+                      length="50"
+                      name="Borough Code" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Community Board]"
+                      dataType="wstr"
+                      length="50"
+                      name="Community Board" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Council District]"
+                      dataType="wstr"
+                      length="50"
+                      name="Council District" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[BIN]"
+                      dataType="wstr"
+                      length="50"
+                      name="BIN" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[BBL]"
+                      dataType="wstr"
+                      length="50"
+                      name="BBL" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[NTA]"
+                      dataType="wstr"
+                      length="50"
+                      name="NTA" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Census Tract]"
+                      dataType="wstr"
+                      length="50"
+                      name="Census Tract" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Detail]"
+                      dataType="wstr"
+                      length="300"
+                      name="Detail" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Longitude]"
+                      dataType="wstr"
+                      length="50"
+                      name="Longitude" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Latitude]"
+                      dataType="wstr"
+                      length="50"
+                      name="Latitude" />
+                    <externalMetadataColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Output].ExternalColumns[Location]"
+                      dataType="wstr"
+                      length="50"
+                      name="Location" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Extract license data\Get license data from dataset.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Extract license data\Script Component"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;12"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="Script Component"
+              version="12">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_0b53c294ebaa4ee1b18ccdcffba039d4</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE"></property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Extract license data\Script Component.Inputs[Input 0]"
+                  hasSideEffects="true"
+                  name="Input 0">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Extract license data\Script Component.Outputs[Output 0]"
+                  name="Output 0"
+                  synchronousInputId="Package\Extract license data\Script Component.Inputs[Input 0]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="134,42"
+          Id="Package\Extract license data"
+          TopLeft="382,96" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Extract license data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="218,42"
+          Id="Package\Extract license data\Get license data from dataset"
+          TopLeft="583,255" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Extract license data\Script Component"
+          TopLeft="675,137" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
