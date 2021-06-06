@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="231"
-  DTS:VersionGUID="{A80E898F-2A57-4584-9AD4-D1ACD3226AA3}">
+  DTS:VersionBuild="240"
+  DTS:VersionGUID="{64A3B448-9948-4B93-BEA9-F4CB91C643B9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -11563,102 +11563,102 @@ FROM [DWSTAGE].[LicenseStage];</property>
               name="Merge Join Output"
               startId="Package\Create payment fact table\Join data on TransactionType.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Create payment fact table.Paths[Merge Join Output3]"
+              refId="Package\Create payment fact table.Paths[Merge Join Output1]"
               endId="Package\Create payment fact table\Sort data by fee details.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\Create payment fact table\Join data on industry.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Create payment fact table.Paths[Merge Join Output4]"
+              refId="Package\Create payment fact table.Paths[Merge Join Output2]"
               endId="Package\Create payment fact table\Sort data by FeeSequenceId.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\Create payment fact table\Join data on fee details.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Create payment fact table.Paths[Merge Join Output1]"
+              refId="Package\Create payment fact table.Paths[Merge Join Output3]"
               endId="Package\Create payment fact table\Sort data by Industry.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\Create payment fact table\Join data on business names.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Create payment fact table.Paths[Merge Join Output2]"
+              refId="Package\Create payment fact table.Paths[Merge Join Output4]"
               endId="Package\Create payment fact table\Sort data by TransactionType.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\Create payment fact table\Join data on FeeSequenceId.Outputs[Merge Join Output]" />
-            <path
-              refId="Package\Create payment fact table.Paths[OLE DB Source Output]"
-              endId="Package\Create payment fact table\Sort payment data by FeeSequenceId.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Create payment fact table\Get selected columns from staged payment data.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Create payment fact table.Paths[OLE DB Source Output1]"
-              endId="Package\Create payment fact table\Sort fee data by fee details.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Create payment fact table\Load fee dimension.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Create payment fact table.Paths[OLE DB Source Output2]"
-              endId="Package\Create payment fact table\Sort transaction type data by TransactionType.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Create payment fact table\Load transaction type dimension.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Create payment fact table.Paths[OLE DB Source Output3]"
-              endId="Package\Create payment fact table\Sort business data by business names.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Create payment fact table\Load business dimension.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Create payment fact table.Paths[OLE DB Source Output4]"
               endId="Package\Create payment fact table\Sort industry data by Industry.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Create payment fact table\Load industry dimension.Outputs[OLE DB Source Output]" />
             <path
+              refId="Package\Create payment fact table.Paths[OLE DB Source Output3]"
+              endId="Package\Create payment fact table\Sort business data by business names.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Create payment fact table\Load business dimension.Outputs[OLE DB Source Output]" />
+            <path
               refId="Package\Create payment fact table.Paths[OLE DB Source Output5]"
               endId="Package\Create payment fact table\Sort fee data by business names.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Create payment fact table\Get selected columns from staged fee data.Outputs[OLE DB Source Output]" />
             <path
+              refId="Package\Create payment fact table.Paths[OLE DB Source Output1]"
+              endId="Package\Create payment fact table\Sort fee data by fee details.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Create payment fact table\Load fee dimension.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Create payment fact table.Paths[OLE DB Source Output]"
+              endId="Package\Create payment fact table\Sort payment data by FeeSequenceId.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Create payment fact table\Get selected columns from staged payment data.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Create payment fact table.Paths[OLE DB Source Output2]"
+              endId="Package\Create payment fact table\Sort transaction type data by TransactionType.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Create payment fact table\Load transaction type dimension.Outputs[OLE DB Source Output]" />
+            <path
               refId="Package\Create payment fact table.Paths[Sort Output8]"
-              endId="Package\Create payment fact table\Join data on fee details.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Create payment fact table\Sort data by fee details.Outputs[Sort Output]" />
-            <path
-              refId="Package\Create payment fact table.Paths[Sort Output7]"
-              endId="Package\Create payment fact table\Join data on TransactionType.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Create payment fact table\Sort transaction type data by TransactionType.Outputs[Sort Output]" />
-            <path
-              refId="Package\Create payment fact table.Paths[Sort Output6]"
-              endId="Package\Create payment fact table\Join data on industry.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Create payment fact table\Sort industry data by Industry.Outputs[Sort Output]" />
-            <path
-              refId="Package\Create payment fact table.Paths[Sort Output5]"
-              endId="Package\Create payment fact table\Join data on industry.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Create payment fact table\Sort data by Industry.Outputs[Sort Output]" />
-            <path
-              refId="Package\Create payment fact table.Paths[Sort Output1]"
-              endId="Package\Create payment fact table\Join data on fee details.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Create payment fact table\Sort fee data by fee details.Outputs[Sort Output]" />
-            <path
-              refId="Package\Create payment fact table.Paths[Sort Output3]"
-              endId="Package\Create payment fact table\Join data on TransactionType.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Create payment fact table\Sort data by TransactionType.Outputs[Sort Output]" />
-            <path
-              refId="Package\Create payment fact table.Paths[Sort Output2]"
-              endId="Package\Create payment fact table\Join data on FeeSequenceId.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Create payment fact table\Sort data by FeeSequenceId.Outputs[Sort Output]" />
-            <path
-              refId="Package\Create payment fact table.Paths[Sort Output9]"
-              endId="Package\Create payment fact table\Join data on FeeSequenceId.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Create payment fact table\Sort payment data by FeeSequenceId.Outputs[Sort Output]" />
-            <path
-              refId="Package\Create payment fact table.Paths[Sort Output4]"
               endId="Package\Create payment fact table\Join data on business names.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Create payment fact table\Sort fee data by business names.Outputs[Sort Output]" />
             <path
               refId="Package\Create payment fact table.Paths[Sort Output]"
+              endId="Package\Create payment fact table\Join data on fee details.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Create payment fact table\Sort data by fee details.Outputs[Sort Output]" />
+            <path
+              refId="Package\Create payment fact table.Paths[Sort Output1]"
+              endId="Package\Create payment fact table\Join data on TransactionType.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Create payment fact table\Sort transaction type data by TransactionType.Outputs[Sort Output]" />
+            <path
+              refId="Package\Create payment fact table.Paths[Sort Output2]"
+              endId="Package\Create payment fact table\Join data on industry.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Create payment fact table\Sort industry data by Industry.Outputs[Sort Output]" />
+            <path
+              refId="Package\Create payment fact table.Paths[Sort Output3]"
+              endId="Package\Create payment fact table\Join data on industry.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Create payment fact table\Sort data by Industry.Outputs[Sort Output]" />
+            <path
+              refId="Package\Create payment fact table.Paths[Sort Output4]"
+              endId="Package\Create payment fact table\Join data on fee details.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Create payment fact table\Sort fee data by fee details.Outputs[Sort Output]" />
+            <path
+              refId="Package\Create payment fact table.Paths[Sort Output5]"
+              endId="Package\Create payment fact table\Join data on TransactionType.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Create payment fact table\Sort data by TransactionType.Outputs[Sort Output]" />
+            <path
+              refId="Package\Create payment fact table.Paths[Sort Output6]"
+              endId="Package\Create payment fact table\Join data on FeeSequenceId.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Create payment fact table\Sort data by FeeSequenceId.Outputs[Sort Output]" />
+            <path
+              refId="Package\Create payment fact table.Paths[Sort Output7]"
+              endId="Package\Create payment fact table\Join data on FeeSequenceId.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Create payment fact table\Sort payment data by FeeSequenceId.Outputs[Sort Output]" />
+            <path
+              refId="Package\Create payment fact table.Paths[Sort Output9]"
               endId="Package\Create payment fact table\Join data on business names.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Create payment fact table\Sort business data by business names.Outputs[Sort Output]" />
@@ -26237,64 +26237,64 @@ WHERE [SourceRowNumber] = ?</property>
               startId="Package\Ensure correctness of license data\Parse Longitude.Outputs[Derived Column Error Output]" />
             <path
               refId="Package\Ensure correctness of license data.Paths[Derived Column Output10]"
-              endId="Package\Ensure correctness of license data\Union 5.Inputs[Union All Input 1]"
-              name="Derived Column Output"
-              startId="Package\Ensure correctness of license data\Parse Longitude.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Ensure correctness of license data.Paths[Derived Column Output9]"
-              endId="Package\Ensure correctness of license data\Union 4.Inputs[Union All Input 2]"
-              name="Derived Column Output"
-              startId="Package\Ensure correctness of license data\Parse LicenseExpirationDate.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Ensure correctness of license data.Paths[Derived Column Output8]"
-              endId="Package\Ensure correctness of license data\Multicast 4.Inputs[Multicast Input 1]"
-              name="Derived Column Output"
-              startId="Package\Ensure correctness of license data\Log invalid Longitude.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Ensure correctness of license data.Paths[Derived Column Output7]"
-              endId="Package\Ensure correctness of license data\Multicast.Inputs[Multicast Input 1]"
-              name="Derived Column Output"
-              startId="Package\Ensure correctness of license data\Include SessionId.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Ensure correctness of license data.Paths[Derived Column Output6]"
-              endId="Package\Ensure correctness of license data\Multicast 3.Inputs[Multicast Input 1]"
-              name="Derived Column Output"
-              startId="Package\Ensure correctness of license data\Log invalid LicenseExpirationDate.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Ensure correctness of license data.Paths[Derived Column Output3]"
-              endId="Package\Ensure correctness of license data\Union 3.Inputs[Union All Input 2]"
-              name="Derived Column Output"
-              startId="Package\Ensure correctness of license data\Parse LicenseCreationDate.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Ensure correctness of license data.Paths[Derived Column Output4]"
-              endId="Package\Ensure correctness of license data\Multicast 2.Inputs[Multicast Input 1]"
-              name="Derived Column Output"
-              startId="Package\Ensure correctness of license data\Log invalid LicenseCreationDate.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Ensure correctness of license data.Paths[Derived Column Output11]"
-              endId="Package\Ensure correctness of license data\Union 1.Inputs[Union All Input 1]"
-              name="Derived Column Output"
-              startId="Package\Ensure correctness of license data\Log missing BusinessName.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Ensure correctness of license data.Paths[Derived Column Output2]"
-              endId="Package\Ensure correctness of license data\Union 1.Inputs[Union All Input 2]"
-              name="Derived Column Output"
-              startId="Package\Ensure correctness of license data\Log missing LicenseCreationDate.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Ensure correctness of license data.Paths[Derived Column Output1]"
-              endId="Package\Ensure correctness of license data\Union 1.Inputs[Union All Input 3]"
-              name="Derived Column Output"
-              startId="Package\Ensure correctness of license data\Log missing Longitude.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Ensure correctness of license data.Paths[Derived Column Output]"
               endId="Package\Ensure correctness of license data\Union 1.Inputs[Union All Input 4]"
               name="Derived Column Output"
               startId="Package\Ensure correctness of license data\Log missing Latitude.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Ensure correctness of license data.Paths[Derived Column Output5]"
+              refId="Package\Ensure correctness of license data.Paths[Derived Column Output9]"
+              endId="Package\Ensure correctness of license data\Union 1.Inputs[Union All Input 3]"
+              name="Derived Column Output"
+              startId="Package\Ensure correctness of license data\Log missing Longitude.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Ensure correctness of license data.Paths[Derived Column Output8]"
+              endId="Package\Ensure correctness of license data\Union 1.Inputs[Union All Input 2]"
+              name="Derived Column Output"
+              startId="Package\Ensure correctness of license data\Log missing LicenseCreationDate.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Ensure correctness of license data.Paths[Derived Column Output7]"
+              endId="Package\Ensure correctness of license data\Union 1.Inputs[Union All Input 1]"
+              name="Derived Column Output"
+              startId="Package\Ensure correctness of license data\Log missing BusinessName.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Ensure correctness of license data.Paths[Derived Column Output6]"
+              endId="Package\Ensure correctness of license data\Multicast 2.Inputs[Multicast Input 1]"
+              name="Derived Column Output"
+              startId="Package\Ensure correctness of license data\Log invalid LicenseCreationDate.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Ensure correctness of license data.Paths[Derived Column Output3]"
+              endId="Package\Ensure correctness of license data\Multicast.Inputs[Multicast Input 1]"
+              name="Derived Column Output"
+              startId="Package\Ensure correctness of license data\Include SessionId.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Ensure correctness of license data.Paths[Derived Column Output4]"
+              endId="Package\Ensure correctness of license data\Multicast 3.Inputs[Multicast Input 1]"
+              name="Derived Column Output"
+              startId="Package\Ensure correctness of license data\Log invalid LicenseExpirationDate.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Ensure correctness of license data.Paths[Derived Column Output11]"
               endId="Package\Ensure correctness of license data\Unify log data.Inputs[Union All Input 4]"
               name="Derived Column Output"
               startId="Package\Ensure correctness of license data\Log invalid Latitude.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Ensure correctness of license data.Paths[Derived Column Output2]"
+              endId="Package\Ensure correctness of license data\Multicast 4.Inputs[Multicast Input 1]"
+              name="Derived Column Output"
+              startId="Package\Ensure correctness of license data\Log invalid Longitude.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Ensure correctness of license data.Paths[Derived Column Output1]"
+              endId="Package\Ensure correctness of license data\Union 4.Inputs[Union All Input 2]"
+              name="Derived Column Output"
+              startId="Package\Ensure correctness of license data\Parse LicenseExpirationDate.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Ensure correctness of license data.Paths[Derived Column Output]"
+              endId="Package\Ensure correctness of license data\Union 5.Inputs[Union All Input 1]"
+              name="Derived Column Output"
+              startId="Package\Ensure correctness of license data\Parse Longitude.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Ensure correctness of license data.Paths[Derived Column Output5]"
+              endId="Package\Ensure correctness of license data\Union 3.Inputs[Union All Input 2]"
+              name="Derived Column Output"
+              startId="Package\Ensure correctness of license data\Parse LicenseCreationDate.Outputs[Derived Column Output]" />
             <path
               refId="Package\Ensure correctness of license data.Paths[High severity]"
               endId="Package\Ensure correctness of license data\Delete rows from LicenseExtract table.Inputs[OLE DB Command Input]"
@@ -26337,29 +26337,29 @@ WHERE [SourceRowNumber] = ?</property>
               startId="Package\Ensure correctness of license data\Multicast 2.Outputs[Multicast Output 1]" />
             <path
               refId="Package\Ensure correctness of license data.Paths[Multicast Output 24]"
-              endId="Package\Ensure correctness of license data\Unify log data.Inputs[Union All Input 2]"
+              endId="Package\Ensure correctness of license data\Unify log data.Inputs[Union All Input 5]"
               name="Multicast Output 2"
-              startId="Package\Ensure correctness of license data\Multicast 3.Outputs[Multicast Output 2]" />
+              startId="Package\Ensure correctness of license data\Multicast 1.Outputs[Multicast Output 2]" />
             <path
               refId="Package\Ensure correctness of license data.Paths[Multicast Output 22]"
-              endId="Package\Ensure correctness of license data\Unify log data.Inputs[Union All Input 1]"
-              name="Multicast Output 2"
-              startId="Package\Ensure correctness of license data\Multicast 2.Outputs[Multicast Output 2]" />
-            <path
-              refId="Package\Ensure correctness of license data.Paths[Multicast Output 23]"
               endId="Package\Ensure correctness of license data\Unify log data.Inputs[Union All Input 3]"
               name="Multicast Output 2"
               startId="Package\Ensure correctness of license data\Multicast 4.Outputs[Multicast Output 2]" />
             <path
-              refId="Package\Ensure correctness of license data.Paths[Multicast Output 2]"
+              refId="Package\Ensure correctness of license data.Paths[Multicast Output 23]"
               endId="Package\Ensure correctness of license data\Insert logs to DataCorrectnessInfo table.Inputs[OLE DB Destination Input]"
               name="Multicast Output 2"
               startId="Package\Ensure correctness of license data\Multicast.Outputs[Multicast Output 2]" />
             <path
-              refId="Package\Ensure correctness of license data.Paths[Multicast Output 21]"
-              endId="Package\Ensure correctness of license data\Unify log data.Inputs[Union All Input 5]"
+              refId="Package\Ensure correctness of license data.Paths[Multicast Output 2]"
+              endId="Package\Ensure correctness of license data\Unify log data.Inputs[Union All Input 2]"
               name="Multicast Output 2"
-              startId="Package\Ensure correctness of license data\Multicast 1.Outputs[Multicast Output 2]" />
+              startId="Package\Ensure correctness of license data\Multicast 3.Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\Ensure correctness of license data.Paths[Multicast Output 21]"
+              endId="Package\Ensure correctness of license data\Unify log data.Inputs[Union All Input 1]"
+              name="Multicast Output 2"
+              startId="Package\Ensure correctness of license data\Multicast 2.Outputs[Multicast Output 2]" />
             <path
               refId="Package\Ensure correctness of license data.Paths[Multicast Output 3]"
               endId="Package\Ensure correctness of license data\Get logs with High severity.Inputs[Conditional Split Input]"
@@ -26372,29 +26372,29 @@ WHERE [SourceRowNumber] = ?</property>
               startId="Package\Ensure correctness of license data\Get selected columns from extracted license data.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Ensure correctness of license data.Paths[Union All Output 14]"
+              endId="Package\Ensure correctness of license data\Parse Longitude.Inputs[Derived Column Input]"
+              name="Union All Output 1"
+              startId="Package\Ensure correctness of license data\Union 4.Outputs[Union All Output 1]" />
+            <path
+              refId="Package\Ensure correctness of license data.Paths[Union All Output 1]"
               endId="Package\Ensure correctness of license data\Parse LicenseExpirationDate.Inputs[Derived Column Input]"
               name="Union All Output 1"
               startId="Package\Ensure correctness of license data\Union 3.Outputs[Union All Output 1]" />
             <path
-              refId="Package\Ensure correctness of license data.Paths[Union All Output 1]"
+              refId="Package\Ensure correctness of license data.Paths[Union All Output 11]"
               endId="Package\Ensure correctness of license data\Parse LicenseCreationDate.Inputs[Derived Column Input]"
               name="Union All Output 1"
               startId="Package\Ensure correctness of license data\Union 2.Outputs[Union All Output 1]" />
             <path
-              refId="Package\Ensure correctness of license data.Paths[Union All Output 11]"
+              refId="Package\Ensure correctness of license data.Paths[Union All Output 12]"
               endId="Package\Ensure correctness of license data\Include SessionId.Inputs[Derived Column Input]"
               name="Union All Output 1"
               startId="Package\Ensure correctness of license data\Unify log data.Outputs[Union All Output 1]" />
             <path
-              refId="Package\Ensure correctness of license data.Paths[Union All Output 12]"
+              refId="Package\Ensure correctness of license data.Paths[Union All Output 13]"
               endId="Package\Ensure correctness of license data\Parse Latitude.Inputs[Derived Column Input]"
               name="Union All Output 1"
               startId="Package\Ensure correctness of license data\Union 5.Outputs[Union All Output 1]" />
-            <path
-              refId="Package\Ensure correctness of license data.Paths[Union All Output 13]"
-              endId="Package\Ensure correctness of license data\Parse Longitude.Inputs[Derived Column Input]"
-              name="Union All Output 1"
-              startId="Package\Ensure correctness of license data\Union 4.Outputs[Union All Output 1]" />
             <path
               refId="Package\Ensure correctness of license data.Paths[Union All Output 15]"
               endId="Package\Ensure correctness of license data\Multicast 1.Inputs[Multicast Input 1]"
@@ -28973,7 +28973,7 @@ WHERE [SourceRowNumber] = ?</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Ensure DWSTAGE, DWLOG and DW schemas exist"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -28990,12 +28990,12 @@ WHERE [SourceRowNumber] = ?</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Ensure logging tables, staging tables, dimensions and fact tables exist"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{2AE594AF-1E0E-4046-88A5-B26D8D809332}"
-          SQLTask:SqlStatementSource="-- Logging tables&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'Sessions' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWLOG].[Sessions] (&#xA;    [SessionId] uniqueidentifier NOT NULL UNIQUE,&#xA;    [StartTime] datetime2 NOT NULL,&#xA;&#x9;[EndTime] datetime2 NULL,&#xA;    CONSTRAINT [PK_Sessions] PRIMARY KEY ([SessionId])&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'DataExtractionErrors' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWLOG].[DataExtractionErrors] (&#xA;    [SessionId] uniqueidentifier NOT NULL,&#xA;    [Dataset] nvarchar(20) NOT NULL,&#xA;    [FaultyRow] nvarchar(4000) NOT NULL,&#xA;&#x9;[ErrorColumn] int NOT NULL,&#xA;    [ColumnName] nvarchar(255) NOT NULL,&#xA;&#x9;[ErrorCode] int NOT NULL,&#xA;    [ErrorDescription] nvarchar(255) NOT NULL,&#xA;    [Timestamp] datetime2 NOT NULL,&#xA;    CONSTRAINT [FK_DataExtractionErrors_ToSessions] FOREIGN KEY ([SessionId]) REFERENCES [DWLOG].[Sessions]([SessionId])&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'DataCorrectnessInfo' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWLOG].[DataCorrectnessInfo] (&#xA;    [SessionId] uniqueidentifier NOT NULL,&#xA;    [Dataset] nvarchar(20) NOT NULL,&#xA;    [SourceRowNumber] int NOT NULL,&#xA;    [ColumnName] nvarchar(50) NOT NULL,&#xA;    [ColumnValue] nvarchar(300) NOT NULL,&#xA;    [Description] nvarchar(500) NOT NULL,&#xA;&#x9;[Severity] nvarchar(20) NOT NULL,&#xA;    [Timestamp] datetime2 NOT NULL,&#xA;    CONSTRAINT [FK_DataCorrectnessInfo_ToSessions] FOREIGN KEY ([SessionId]) REFERENCES [DWLOG].[Sessions]([SessionId])&#xA;)&#xA;GO&#xA;&#xA;-- Extract tables&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'LicenseExtract' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWSTAGE].[LicenseExtract] (&#xA;    [SourceRowNumber] int NOT NULL UNIQUE,&#xA;    [DCALicenseNumber] nvarchar(50) NOT NULL,&#xA;    [LicenseType] nvarchar(50) NOT NULL,&#xA;    [LicenseExpirationDate] nvarchar(50) NOT NULL,&#xA;    [LicenseStatus] nvarchar(50) NOT NULL,&#xA;    [LicenseCreationDate] nvarchar(50) NOT NULL,&#xA;    [Industry] nvarchar(50) NOT NULL,&#xA;    [BusinessName] nvarchar(300) NOT NULL,&#xA;    [BusinessName2] nvarchar(100) NOT NULL,&#xA;    [AddressBuilding] nvarchar(50) NOT NULL,&#xA;    [AddressStreetName] nvarchar(75) NOT NULL,&#xA;    [SecondaryAddressStreetName] nvarchar(75) NOT NULL,&#xA;    [AddressCity] nvarchar(50) NOT NULL,&#xA;    [AddressState] nvarchar(50) NOT NULL,&#xA;    [AddressZIP] nvarchar(50) NOT NULL,&#xA;    [ContactPhoneNumber] nvarchar(50) NOT NULL,&#xA;    [AddressBorough] nvarchar(50) NOT NULL,&#xA;    [BoroughCode] nvarchar(50) NOT NULL,&#xA;    [CommunityBoard] nvarchar(50) NOT NULL,&#xA;    [CouncilDistrict] nvarchar(50) NOT NULL,&#xA;    [BIN] nvarchar(50) NOT NULL,&#xA;    [BBL] nvarchar(50) NOT NULL,&#xA;    [NTA] nvarchar(50) NOT NULL,&#xA;    [CensusTract] nvarchar(50) NOT NULL,&#xA;    [Detail] nvarchar(300) NOT NULL,&#xA;    [Longitude] nvarchar(50) NOT NULL,&#xA;    [Latitude] nvarchar(50) NOT NULL,&#xA;    [Location] nvarchar(50) NOT NULL&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'FeeExtract' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWSTAGE].[FeeExtract] (&#xA;    [SourceRowNumber] int NOT NULL UNIQUE,&#xA;    [RecordId] nvarchar(50) NOT NULL,&#xA;    [RecordType] nvarchar(50) NOT NULL,&#xA;    [BusinessName] nvarchar(300) NOT NULL,&#xA;    [BusinessName2] nvarchar(100) NOT NULL,&#xA;    [Industry] nvarchar(50) NOT NULL,&#xA;    [FeeSequenceId] nvarchar(50) NOT NULL,&#xA;    [FeeType] nvarchar(50) NOT NULL,&#xA;    [FeeDescription] nvarchar(100) NOT NULL,&#xA;    [FeeAmount] nvarchar(50) NOT NULL,&#xA;    [FeeDate] nvarchar(50) NOT NULL,&#xA;    [FeeStatus] nvarchar(50) NOT NULL&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'PaymentExtract' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWSTAGE].[PaymentExtract] (&#xA;    [SourceRowNumber] int NOT NULL UNIQUE,&#xA;    [RecordId] nvarchar(50) NOT NULL,&#xA;    [BusinessName] nvarchar(300) NOT NULL,&#xA;    [BusinessName2] nvarchar(100) NOT NULL,&#xA;    [Industry] nvarchar(50) NOT NULL,&#xA;    [FeeSequenceId] nvarchar(50) NOT NULL,&#xA;    [FeeType] nvarchar(50) NOT NULL,&#xA;    [FeeDescription] nvarchar(100) NOT NULL,&#xA;    [RecordType] nvarchar(50) NOT NULL,&#xA;    [PaymentAmount] nvarchar(50) NOT NULL,&#xA;    [TransactionType] nvarchar(50) NOT NULL,&#xA;    [PaymentDate] nvarchar(50) NOT NULL&#xA;)&#xA;GO&#xA;&#xA;-- Staging tables&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'LicenseStage' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWSTAGE].[LicenseStage] (&#xA;    [LicenseNumber] nvarchar(50) NOT NULL,&#xA;    [BusinessType] nvarchar(50) NOT NULL,&#xA;    [LicenseExpirationDate] date NULL,&#xA;    [LicenseCreationDate] date NULL,&#xA;    [Industry] nvarchar(50) NOT NULL,&#xA;    [BusinessName] nvarchar(300) NOT NULL,&#xA;    [BusinessName2] nvarchar(100) NOT NULL,&#xA;    [AddressBuilding] nvarchar(50) NOT NULL,&#xA;    [AddressStreetName] nvarchar(75) NOT NULL,&#xA;    [SecondaryAddressStreetName] nvarchar(75) NOT NULL,&#xA;    [AddressCity] nvarchar(50) NOT NULL,&#xA;    [AddressState] nvarchar(50) NOT NULL,&#xA;    [AddressZIP] nvarchar(50) NOT NULL,&#xA;    [AddressBorough] nvarchar(50) NOT NULL,&#xA;    [BoroughCode] nvarchar(50) NOT NULL,&#xA;    [CommunityBoard] nvarchar(50) NOT NULL,&#xA;    [CouncilDistrict] nvarchar(50) NOT NULL,&#xA;    [CensusTract] nvarchar(50) NOT NULL,&#xA;    [Longitude] nvarchar(50) NOT NULL,&#xA;    [Latitude] nvarchar(50) NOT NULL&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'FeeStage' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWSTAGE].[FeeStage] (&#xA;    [FeeSequenceId] nvarchar(50) NOT NULL,&#xA;    [BusinessName] nvarchar(300) NOT NULL,&#xA;    [BusinessName2] nvarchar(100) NOT NULL,&#xA;    [FeeDate] date NULL,&#xA;    [RecordType] nvarchar(50) NOT NULL,&#xA;    [Industry] nvarchar(50) NOT NULL,&#xA;    [FeeType] nvarchar(50) NOT NULL,&#xA;    [FeeDescription] nvarchar(100) NOT NULL,&#xA;    [FeeAmount] money NULL&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'PaymentStage' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWSTAGE].[PaymentStage] (&#xA;    [FeeSequenceId] nvarchar(50) NOT NULL,&#xA;    [PaymentAmount] money NULL,&#xA;    [TransactionType] nvarchar(50) NOT NULL&#xA;)&#xA;GO&#xA;&#xA;-- Dimensions&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'BusinessDim' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DW].[BusinessDim] (&#xA;    [BusinessId] int NOT NULL IDENTITY(1,1),&#xA;    [BusinessName] nvarchar(300) NOT NULL,&#xA;    [BusinessName2] nvarchar(100) NOT NULL,&#xA;    [BusinessType] nvarchar(50) NOT NULL,&#xA;    [AddressBuilding] nvarchar(50) NOT NULL,&#xA;    [AddressStreetName] nvarchar(75) NOT NULL,&#xA;    [SecondaryAddressStreetName] nvarchar(75) NOT NULL,&#xA;    [AddressCity] nvarchar(50) NOT NULL,&#xA;    [AddressState] nvarchar(50) NOT NULL,&#xA;    [AddressZIP] nvarchar(50) NOT NULL,&#xA;    [AddressBorough] nvarchar(50) NOT NULL,&#xA;    [BoroughCode] nvarchar(50) NOT NULL,&#xA;    [CommunityBoard] nvarchar(50) NOT NULL,&#xA;    [CouncilDistrict] nvarchar(50) NOT NULL,&#xA;    [CensusTract] nvarchar(50) NOT NULL,&#xA;    [Longitude] nvarchar(50) NOT NULL,&#xA;    [Latitude] nvarchar(50) NOT NULL,&#xA;    CONSTRAINT [PK_BusinessDim] PRIMARY KEY ([BusinessId])&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'IndustryDim' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DW].[IndustryDim] (&#xA;    [IndustryId] int NOT NULL IDENTITY(1,1),&#xA;    [Industry] nvarchar(50) NOT NULL,&#xA;    CONSTRAINT [PK_IndustryDim] PRIMARY KEY ([IndustryId])&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'FeeDim' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DW].[FeeDim] (&#xA;    [FeeId] int NOT NULL IDENTITY(1,1),&#xA;    [IndustryId] int NOT NULL,&#xA;    [RecordType] nvarchar(50) NOT NULL,&#xA;    [FeeType] nvarchar(50) NOT NULL,&#xA;    [FeeDescription] nvarchar(100) NOT NULL,&#xA;    CONSTRAINT [PK_FeeDim] PRIMARY KEY ([FeeId]),&#xA;    CONSTRAINT [FK_FeeDim_ToIndustryDim] FOREIGN KEY ([IndustryId]) REFERENCES [DW].[IndustryDim]([IndustryId])&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'TimeDim' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DW].[TimeDim] (&#xA;    [Date] date NOT NULL,&#xA;    [Day] int NOT NULL,&#xA;    [DayName] nvarchar(30) NOT NULL,&#xA;    [Weekday] int NOT NULL,&#xA;    [Week] int NOT NULL,&#xA;    [Month] int NOT NULL,&#xA;    [MonthName] nvarchar(30) NOT NULL,&#xA;    [Quarter] int NOT NULL,&#xA;    [Year] int NOT NULL,&#xA;    CONSTRAINT [PK_TimeDim] PRIMARY KEY ([Date])&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'TransactionTypeDim' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DW].[TransactionTypeDim] (&#xA;    [TransactionTypeId] int NOT NULL IDENTITY(1,1),&#xA;    [TransactionType] nvarchar(50) NOT NULL,&#xA;    CONSTRAINT [PK_TransactionTypeDim] PRIMARY KEY ([TransactionTypeId])&#xA;)&#xA;GO&#xA;&#xA;-- Fact tables&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'LicenseFact' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DW].[LicenseFact] (&#xA;    [CreationDate] date NULL,&#xA;    [ExpirationDate] date NULL,&#xA;    [BusinessId] int NOT NULL,&#xA;    [IndustryId] int NOT NULL,&#xA;    [LicenseNumber] nvarchar(50) NOT NULL,&#xA;    [DurationInDays] int NULL,&#xA;    CONSTRAINT [FK_LicenseFact_ToTimeDim_CreationDate] FOREIGN KEY ([CreationDate]) REFERENCES [DW].[TimeDim]([Date]),&#xA;    CONSTRAINT [FK_LicenseFact_ToTimeDim_ExpirationDate] FOREIGN KEY ([ExpirationDate]) REFERENCES [DW].[TimeDim]([Date]),&#xA;    CONSTRAINT [FK_LicenseFact_ToBusinessDim] FOREIGN KEY ([BusinessId]) REFERENCES [DW].[BusinessDim]([BusinessId]),&#xA;    CONSTRAINT [FK_LicenseFact_ToIndustryDim] FOREIGN KEY ([IndustryId]) REFERENCES [DW].[IndustryDim]([IndustryId])&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'PaymentFact' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DW].[PaymentFact] (&#xA;    [PaymentDate] date NULL,&#xA;    [FeeId] int NOT NULL,&#xA;    [BusinessId] int NOT NULL,&#xA;    [TransactionTypeId] int NOT NULL,&#xA;    [FeeSequenceId] int NOT NULL,&#xA;    [FeeAmount] money NULL,&#xA;    [PaymentAmount] money NULL,&#xA;    CONSTRAINT [FK_PaymentFact_ToTimeDim] FOREIGN KEY ([PaymentDate]) REFERENCES [DW].[TimeDim]([Date]),&#xA;    CONSTRAINT [FK_PaymentFact_ToFeeDim] FOREIGN KEY ([FeeId]) REFERENCES [DW].[FeeDim]([FeeId]),&#xA;    CONSTRAINT [FK_PaymentFact_ToBusinessDim] FOREIGN KEY ([BusinessId]) REFERENCES [DW].[BusinessDim]([BusinessId]),&#xA;    CONSTRAINT [FK_PaymentFact_ToTransactionTypeDim] FOREIGN KEY ([TransactionTypeId]) REFERENCES [DW].[TransactionTypeDim]([TransactionTypeId])&#xA;)&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="-- Logging tables&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'Sessions' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWLOG].[Sessions] (&#xA;    [SessionId] uniqueidentifier NOT NULL UNIQUE,&#xA;    [StartTime] datetime2 NOT NULL,&#xA;&#x9;[EndTime] datetime2 NULL,&#xA;    CONSTRAINT [PK_Sessions] PRIMARY KEY ([SessionId])&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'DataExtractionErrors' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWLOG].[DataExtractionErrors] (&#xA;    [SessionId] uniqueidentifier NOT NULL,&#xA;    [Dataset] nvarchar(20) NOT NULL,&#xA;    [FaultyRow] nvarchar(4000) NOT NULL,&#xA;&#x9;[ErrorColumn] int NOT NULL,&#xA;    [ColumnName] nvarchar(255) NOT NULL,&#xA;&#x9;[ErrorCode] int NOT NULL,&#xA;    [ErrorDescription] nvarchar(255) NOT NULL,&#xA;    [Timestamp] datetime2 NOT NULL,&#xA;    CONSTRAINT [FK_DataExtractionErrors_ToSessions] FOREIGN KEY ([SessionId]) REFERENCES [DWLOG].[Sessions]([SessionId])&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'DataCorrectnessInfo' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWLOG].[DataCorrectnessInfo] (&#xA;    [SessionId] uniqueidentifier NOT NULL,&#xA;    [Dataset] nvarchar(20) NOT NULL,&#xA;    [SourceRowNumber] int NOT NULL,&#xA;    [ColumnName] nvarchar(50) NOT NULL,&#xA;    [ColumnValue] nvarchar(300) NOT NULL,&#xA;    [Description] nvarchar(500) NOT NULL,&#xA;&#x9;[Severity] nvarchar(20) NOT NULL,&#xA;    [Timestamp] datetime2 NOT NULL,&#xA;    CONSTRAINT [FK_DataCorrectnessInfo_ToSessions] FOREIGN KEY ([SessionId]) REFERENCES [DWLOG].[Sessions]([SessionId])&#xA;)&#xA;GO&#xA;&#xA;-- Extract tables&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'LicenseExtract' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWSTAGE].[LicenseExtract] (&#xA;    [SourceRowNumber] int NOT NULL UNIQUE,&#xA;    [DCALicenseNumber] nvarchar(50) NOT NULL,&#xA;    [LicenseType] nvarchar(50) NOT NULL,&#xA;    [LicenseExpirationDate] nvarchar(50) NOT NULL,&#xA;    [LicenseStatus] nvarchar(50) NOT NULL,&#xA;    [LicenseCreationDate] nvarchar(50) NOT NULL,&#xA;    [Industry] nvarchar(50) NOT NULL,&#xA;    [BusinessName] nvarchar(300) NOT NULL,&#xA;    [BusinessName2] nvarchar(100) NOT NULL,&#xA;    [AddressBuilding] nvarchar(50) NOT NULL,&#xA;    [AddressStreetName] nvarchar(75) NOT NULL,&#xA;    [SecondaryAddressStreetName] nvarchar(75) NOT NULL,&#xA;    [AddressCity] nvarchar(50) NOT NULL,&#xA;    [AddressState] nvarchar(50) NOT NULL,&#xA;    [AddressZIP] nvarchar(50) NOT NULL,&#xA;    [ContactPhoneNumber] nvarchar(50) NOT NULL,&#xA;    [AddressBorough] nvarchar(50) NOT NULL,&#xA;    [BoroughCode] nvarchar(50) NOT NULL,&#xA;    [CommunityBoard] nvarchar(50) NOT NULL,&#xA;    [CouncilDistrict] nvarchar(50) NOT NULL,&#xA;    [BIN] nvarchar(50) NOT NULL,&#xA;    [BBL] nvarchar(50) NOT NULL,&#xA;    [NTA] nvarchar(50) NOT NULL,&#xA;    [CensusTract] nvarchar(50) NOT NULL,&#xA;    [Detail] nvarchar(300) NOT NULL,&#xA;    [Longitude] nvarchar(50) NOT NULL,&#xA;    [Latitude] nvarchar(50) NOT NULL,&#xA;    [Location] nvarchar(50) NOT NULL&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'FeeExtract' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWSTAGE].[FeeExtract] (&#xA;    [SourceRowNumber] int NOT NULL UNIQUE,&#xA;    [RecordId] nvarchar(50) NOT NULL,&#xA;    [RecordType] nvarchar(50) NOT NULL,&#xA;    [BusinessName] nvarchar(300) NOT NULL,&#xA;    [BusinessName2] nvarchar(100) NOT NULL,&#xA;    [Industry] nvarchar(50) NOT NULL,&#xA;    [FeeSequenceId] nvarchar(50) NOT NULL,&#xA;    [FeeType] nvarchar(50) NOT NULL,&#xA;    [FeeDescription] nvarchar(100) NOT NULL,&#xA;    [FeeAmount] nvarchar(50) NOT NULL,&#xA;    [FeeDate] nvarchar(50) NOT NULL,&#xA;    [FeeStatus] nvarchar(50) NOT NULL&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'PaymentExtract' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWSTAGE].[PaymentExtract] (&#xA;    [SourceRowNumber] int NOT NULL UNIQUE,&#xA;    [RecordId] nvarchar(50) NOT NULL,&#xA;    [BusinessName] nvarchar(300) NOT NULL,&#xA;    [BusinessName2] nvarchar(100) NOT NULL,&#xA;    [Industry] nvarchar(50) NOT NULL,&#xA;    [FeeSequenceId] nvarchar(50) NOT NULL,&#xA;    [FeeType] nvarchar(50) NOT NULL,&#xA;    [FeeDescription] nvarchar(100) NOT NULL,&#xA;    [RecordType] nvarchar(50) NOT NULL,&#xA;    [PaymentAmount] nvarchar(50) NOT NULL,&#xA;    [TransactionType] nvarchar(50) NOT NULL,&#xA;    [PaymentDate] nvarchar(50) NOT NULL&#xA;)&#xA;GO&#xA;&#xA;-- Staging tables&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'LicenseStage' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWSTAGE].[LicenseStage] (&#xA;    [LicenseNumber] nvarchar(50) NOT NULL,&#xA;    [BusinessType] nvarchar(50) NOT NULL,&#xA;    [LicenseExpirationDate] date NULL,&#xA;    [LicenseCreationDate] date NULL,&#xA;    [Industry] nvarchar(50) NOT NULL,&#xA;    [BusinessName] nvarchar(300) NOT NULL,&#xA;    [BusinessName2] nvarchar(100) NOT NULL,&#xA;    [AddressBuilding] nvarchar(50) NOT NULL,&#xA;    [AddressStreetName] nvarchar(75) NOT NULL,&#xA;    [SecondaryAddressStreetName] nvarchar(75) NOT NULL,&#xA;    [AddressCity] nvarchar(50) NOT NULL,&#xA;    [AddressState] nvarchar(50) NOT NULL,&#xA;    [AddressZIP] nvarchar(50) NOT NULL,&#xA;    [AddressBorough] nvarchar(50) NOT NULL,&#xA;    [BoroughCode] nvarchar(50) NOT NULL,&#xA;    [CommunityBoard] nvarchar(50) NOT NULL,&#xA;    [CouncilDistrict] nvarchar(50) NOT NULL,&#xA;    [CensusTract] nvarchar(50) NOT NULL,&#xA;    [Longitude] nvarchar(50) NOT NULL,&#xA;    [Latitude] nvarchar(50) NOT NULL&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'FeeStage' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWSTAGE].[FeeStage] (&#xA;    [FeeSequenceId] nvarchar(50) NOT NULL,&#xA;    [BusinessName] nvarchar(300) NOT NULL,&#xA;    [BusinessName2] nvarchar(100) NOT NULL,&#xA;    [FeeDate] date NULL,&#xA;    [RecordType] nvarchar(50) NOT NULL,&#xA;    [Industry] nvarchar(50) NOT NULL,&#xA;    [FeeType] nvarchar(50) NOT NULL,&#xA;    [FeeDescription] nvarchar(100) NOT NULL,&#xA;    [FeeAmount] money NULL&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'PaymentStage' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DWSTAGE].[PaymentStage] (&#xA;    [FeeSequenceId] nvarchar(50) NOT NULL,&#xA;    [PaymentAmount] money NULL,&#xA;    [TransactionType] nvarchar(50) NOT NULL&#xA;)&#xA;GO&#xA;&#xA;-- Dimensions&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'BusinessDim' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DW].[BusinessDim] (&#xA;    [BusinessId] int NOT NULL IDENTITY(1,1),&#xA;    [BusinessName] nvarchar(300) NOT NULL,&#xA;    [BusinessName2] nvarchar(100) NOT NULL,&#xA;    [BusinessType] nvarchar(50) NOT NULL,&#xA;    [AddressBuilding] nvarchar(50) NOT NULL,&#xA;    [AddressStreetName] nvarchar(75) NOT NULL,&#xA;    [SecondaryAddressStreetName] nvarchar(75) NOT NULL,&#xA;    [AddressCity] nvarchar(50) NOT NULL,&#xA;    [AddressState] nvarchar(50) NOT NULL,&#xA;    [AddressZIP] nvarchar(50) NOT NULL,&#xA;    [AddressBorough] nvarchar(50) NOT NULL,&#xA;    [BoroughCode] nvarchar(50) NOT NULL,&#xA;    [CommunityBoard] nvarchar(50) NOT NULL,&#xA;    [CouncilDistrict] nvarchar(50) NOT NULL,&#xA;    [CensusTract] nvarchar(50) NOT NULL,&#xA;    [Longitude] nvarchar(50) NOT NULL,&#xA;    [Latitude] nvarchar(50) NOT NULL,&#xA;    CONSTRAINT [PK_BusinessDim] PRIMARY KEY ([BusinessId])&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'IndustryDim' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DW].[IndustryDim] (&#xA;    [IndustryId] int NOT NULL IDENTITY(1,1),&#xA;    [Industry] nvarchar(50) NOT NULL,&#xA;    CONSTRAINT [PK_IndustryDim] PRIMARY KEY ([IndustryId])&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'FeeDim' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DW].[FeeDim] (&#xA;    [FeeId] int NOT NULL IDENTITY(1,1),&#xA;    [IndustryId] int NOT NULL,&#xA;    [RecordType] nvarchar(50) NOT NULL,&#xA;    [FeeType] nvarchar(50) NOT NULL,&#xA;    [FeeDescription] nvarchar(100) NOT NULL,&#xA;    CONSTRAINT [PK_FeeDim] PRIMARY KEY ([FeeId]),&#xA;    CONSTRAINT [FK_FeeDim_ToIndustryDim] FOREIGN KEY ([IndustryId]) REFERENCES [DW].[IndustryDim]([IndustryId])&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'TimeDim' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DW].[TimeDim] (&#xA;    [Date] date NOT NULL,&#xA;    [Day] int NOT NULL,&#xA;    [DayName] nvarchar(30) NOT NULL,&#xA;    [Weekday] int NOT NULL,&#xA;    [Week] int NOT NULL,&#xA;    [Month] int NOT NULL,&#xA;    [MonthName] nvarchar(30) NOT NULL,&#xA;    [Quarter] int NOT NULL,&#xA;    [Year] int NOT NULL,&#xA;    CONSTRAINT [PK_TimeDim] PRIMARY KEY ([Date])&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'TransactionTypeDim' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DW].[TransactionTypeDim] (&#xA;    [TransactionTypeId] int NOT NULL IDENTITY(1,1),&#xA;    [TransactionType] nvarchar(50) NOT NULL,&#xA;    CONSTRAINT [PK_TransactionTypeDim] PRIMARY KEY ([TransactionTypeId])&#xA;)&#xA;GO&#xA;&#xA;-- Fact tables&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'LicenseFact' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DW].[LicenseFact] (&#xA;    [CreationDate] date NULL,&#xA;    [ExpirationDate] date NULL,&#xA;    [BusinessId] int NOT NULL,&#xA;    [IndustryId] int NOT NULL,&#xA;    [LicenseNumber] nvarchar(50) NOT NULL,&#xA;    [DurationInDays] int NULL,&#xA;    CONSTRAINT [FK_LicenseFact_ToTimeDim_CreationDate] FOREIGN KEY ([CreationDate]) REFERENCES [DW].[TimeDim]([Date]),&#xA;    CONSTRAINT [FK_LicenseFact_ToTimeDim_ExpirationDate] FOREIGN KEY ([ExpirationDate]) REFERENCES [DW].[TimeDim]([Date]),&#xA;    CONSTRAINT [FK_LicenseFact_ToBusinessDim] FOREIGN KEY ([BusinessId]) REFERENCES [DW].[BusinessDim]([BusinessId]),&#xA;    CONSTRAINT [FK_LicenseFact_ToIndustryDim] FOREIGN KEY ([IndustryId]) REFERENCES [DW].[IndustryDim]([IndustryId])&#xA;)&#xA;GO&#xA;&#xA;IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sysobjects&#xA;    WHERE name = 'PaymentFact' AND xtype = 'U'&#xA;)&#xA;CREATE TABLE [DW].[PaymentFact] (&#xA;    [PaymentDate] date NULL,&#xA;    [FeeId] int NOT NULL,&#xA;    [BusinessId] int NOT NULL,&#xA;    [TransactionTypeId] int NOT NULL,&#xA;    [FeeSequenceId] nvarchar(50) NOT NULL,&#xA;    [FeeAmount] money NULL,&#xA;    [PaymentAmount] money NULL,&#xA;    CONSTRAINT [FK_PaymentFact_ToTimeDim] FOREIGN KEY ([PaymentDate]) REFERENCES [DW].[TimeDim]([Date]),&#xA;    CONSTRAINT [FK_PaymentFact_ToFeeDim] FOREIGN KEY ([FeeId]) REFERENCES [DW].[FeeDim]([FeeId]),&#xA;    CONSTRAINT [FK_PaymentFact_ToBusinessDim] FOREIGN KEY ([BusinessId]) REFERENCES [DW].[BusinessDim]([BusinessId]),&#xA;    CONSTRAINT [FK_PaymentFact_ToTransactionTypeDim] FOREIGN KEY ([TransactionTypeId]) REFERENCES [DW].[TransactionTypeDim]([TransactionTypeId])&#xA;)&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -29007,7 +29007,7 @@ WHERE [SourceRowNumber] = ?</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Ensure NORMALIZE function exists"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -29024,7 +29024,7 @@ WHERE [SourceRowNumber] = ?</property>
       DTS:LocaleID="-1"
       DTS:ObjectName="Ensure TOPROPERCASE function exists"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -38184,14 +38184,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           Language="CSharp"
           ReadWriteVariables="User::SessionId">
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_3633590dbcb14ea4b9c92d42c9ff8c13")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_3633590dbcb14ea4b9c92d42c9ff8c13")]
+[assembly: AssemblyCopyright("Copyright @  2021")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -38572,35 +38593,14 @@ namespace ST_3633590dbcb14ea4b9c92d42c9ff8c13.Properties {
   </ProjectExtensions>
 </Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_3633590dbcb14ea4b9c92d42c9ff8c13")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_3633590dbcb14ea4b9c92d42c9ff8c13")]
-[assembly: AssemblyCopyright("Copyright @  2021")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -46204,6 +46204,48 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="Make sure all schemas, tables and functions exist"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="184,60"
+          Id="0901f504-50a6-4e9b-8190-6b92cc67edd7"
+          TopLeft="492,137" />
+        <AnnotationLayout
+          Text="This part generates a new GUID which will serve as ID of the current session, so all logged information can be linked to this particular session.&#xD;&#xA;&#xD;&#xA;SessionID is inserted to the Sessions table and StartTime is generated"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="364,120"
+          Id="360225c4-3367-4a32-be76-94f4f0489b78"
+          TopLeft="939,356" />
+        <AnnotationLayout
+          Text="Clear tables and reset identity columns"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="234,60"
+          Id="a38096ca-4a65-4113-802f-078c41359d02"
+          TopLeft="936,522" />
+        <AnnotationLayout
+          Text="Normalize using DW.NORMALIZE() function&#xD;&#xA;&#xD;&#xA;' a   sample  string  ' -&gt; 'A SAMPLE STRING'"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="260,72"
+          Id="c2aa0350-c400-4e63-829f-e760a52d0bcb"
+          TopLeft="148,807" />
+        <AnnotationLayout
+          Text="Transform using DW.TOPROPERCASE() function&#xD;&#xA;&#xD;&#xA;'A SAMPLE STRING' -&gt; 'A Sample String'"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="278,72"
+          Id="fd0ddb51-a5d2-4903-b435-b8bcc156dd71"
+          TopLeft="186,1554" />
+        <AnnotationLayout
+          Text="Finishing the session means that EndTime is generated and inserted to the database"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="266,60"
+          Id="f9f3a9a3-0318-4142-95a9-33a27f3664a6"
+          TopLeft="661,1656" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -46422,6 +46464,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="I did not know how to do this better"
+          ParentId="Package\Create business dimension"
+          FontInfo="{assembly:Null}"
+          Size="220,60"
+          Id="15d5807d-1442-4fa4-9194-04bf8a2af774"
+          TopLeft="1010,116" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -47309,7 +47358,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Id="Package\Create payment fact table\Get selected columns from staged fee data"
           TopLeft="175,0" />
         <EdgeLayout
-          Id="Package\Create payment fact table.Paths[Sort Output9]"
+          Id="Package\Create payment fact table.Paths[Sort Output7]"
           TopLeft="904.25,437">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -47331,7 +47380,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Create payment fact table.Paths[Sort Output8]"
+          Id="Package\Create payment fact table.Paths[Sort Output]"
           TopLeft="504,414">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -47353,7 +47402,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Create payment fact table.Paths[Sort Output7]"
+          Id="Package\Create payment fact table.Paths[Sort Output1]"
           TopLeft="1139.75,531">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -47375,7 +47424,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Create payment fact table.Paths[Sort Output6]"
+          Id="Package\Create payment fact table.Paths[Sort Output2]"
           TopLeft="435,246">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -47397,7 +47446,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Create payment fact table.Paths[Sort Output5]"
+          Id="Package\Create payment fact table.Paths[Sort Output3]"
           TopLeft="240,316.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -47419,7 +47468,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Create payment fact table.Paths[Sort Output4]"
+          Id="Package\Create payment fact table.Paths[Sort Output8]"
           TopLeft="262,135">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -47453,7 +47502,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Create payment fact table.Paths[Sort Output3]"
+          Id="Package\Create payment fact table.Paths[Sort Output5]"
           TopLeft="983,605.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -47475,7 +47524,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Create payment fact table.Paths[Sort Output2]"
+          Id="Package\Create payment fact table.Paths[Sort Output6]"
           TopLeft="736,511.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -47497,7 +47546,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Create payment fact table.Paths[Sort Output1]"
+          Id="Package\Create payment fact table.Paths[Sort Output4]"
           TopLeft="660.25,342">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -47519,7 +47568,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Create payment fact table.Paths[Sort Output]"
+          Id="Package\Create payment fact table.Paths[Sort Output9]"
           TopLeft="83.5,135">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -47685,7 +47734,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Create payment fact table.Paths[Merge Join Output3]"
+          Id="Package\Create payment fact table.Paths[Merge Join Output1]"
           TopLeft="435.75,338">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -47707,7 +47756,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Create payment fact table.Paths[Merge Join Output2]"
+          Id="Package\Create payment fact table.Paths[Merge Join Output4]"
           TopLeft="904.75,532">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -47729,7 +47778,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Create payment fact table.Paths[Merge Join Output1]"
+          Id="Package\Create payment fact table.Paths[Merge Join Output3]"
           TopLeft="171.75,245">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -47773,7 +47822,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Create payment fact table.Paths[Merge Join Output4]"
+          Id="Package\Create payment fact table.Paths[Merge Join Output2]"
           TopLeft="660.25,436">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -49221,74 +49270,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="474,82" />
         <EdgeLayout
           Id="Package\Ensure correctness of license data.Paths[Derived Column Output6]"
-          TopLeft="1639,354">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="65,62"
-              Start="0,0"
-              End="57.5,62">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="28.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="28.5,0"
-                    Point2="32.5,0"
-                    Point3="32.5,4" />
-                  <mssgle:LineSegment
-                    End="32.5,58" />
-                  <mssgle:CubicBezierSegment
-                    Point1="32.5,58"
-                    Point2="32.5,62"
-                    Point3="36.5,62" />
-                  <mssgle:LineSegment
-                    End="57.5,62" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Derived Column Output5]"
-          TopLeft="2311,440">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-704.833333333333,116"
-              Start="0,0"
-              End="-704.833333333333,108.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,80.6644295302014" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,80.6644295302014"
-                    Point2="0,84.6644295302014"
-                    Point3="-4,84.6644295302014" />
-                  <mssgle:LineSegment
-                    End="-700.833333333333,84.6644295302014" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-700.833333333333,84.6644295302014"
-                    Point2="-704.833333333333,84.6644295302014"
-                    Point3="-704.833333333333,88.6644295302014" />
-                  <mssgle:LineSegment
-                    End="-704.833333333333,108.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Derived Column Output4]"
           TopLeft="1205,350">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -49322,7 +49303,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Derived Column Output3]"
+          Id="Package\Ensure correctness of license data.Paths[Derived Column Output5]"
           TopLeft="1210,100.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -49344,31 +49325,87 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Derived Column Output2]"
-          TopLeft="431,237">
+          Id="Package\Ensure correctness of license data.Paths[Derived Column Output4]"
+          TopLeft="1639,354">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="88.8,98"
+              EndConnector="65,62"
               Start="0,0"
-              End="88.8,90.5">
+              End="57.5,62">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,50.0268456375839" />
+                    End="28.5,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,50.0268456375839"
-                    Point2="0,54.0268456375839"
-                    Point3="4,54.0268456375839" />
+                    Point1="28.5,0"
+                    Point2="32.5,0"
+                    Point3="32.5,4" />
                   <mssgle:LineSegment
-                    End="84.8,54.0268456375839" />
+                    End="32.5,58" />
                   <mssgle:CubicBezierSegment
-                    Point1="84.8,54.0268456375839"
-                    Point2="88.8,54.0268456375839"
-                    Point3="88.8,58.0268456375839" />
+                    Point1="32.5,58"
+                    Point2="32.5,62"
+                    Point3="36.5,62" />
                   <mssgle:LineSegment
-                    End="88.8,90.5" />
+                    End="57.5,62" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ensure correctness of license data.Paths[Derived Column Output3]"
+          TopLeft="1559.5,684">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48"
+              Start="0,0"
+              End="0,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ensure correctness of license data.Paths[Derived Column Output2]"
+          TopLeft="2000,355">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="62,64"
+              Start="0,0"
+              End="54.5,64">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="27,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="27,0"
+                    Point2="31,0"
+                    Point3="31,4" />
+                  <mssgle:LineSegment
+                    End="31,60" />
+                  <mssgle:CubicBezierSegment
+                    Point1="31,60"
+                    Point2="31,64"
+                    Point3="35,64" />
+                  <mssgle:LineSegment
+                    End="54.5,64" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -49379,30 +49416,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Ensure correctness of license data.Paths[Derived Column Output1]"
-          TopLeft="606.5,266">
+          TopLeft="1641,99.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-65.3,69"
+              EndConnector="66,0"
               Start="0,0"
-              End="-65.3,61.5">
+              End="58.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,34.039309683605" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.039309683605"
-                    Point2="0,38.039309683605"
-                    Point3="-4,38.039309683605" />
-                  <mssgle:LineSegment
-                    End="-61.3,38.039309683605" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-61.3,38.039309683605"
-                    Point2="-65.3,38.039309683605"
-                    Point3="-65.3,42.039309683605" />
-                  <mssgle:LineSegment
-                    End="-65.3,61.5" />
+                    End="58.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -49413,30 +49438,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Ensure correctness of license data.Paths[Derived Column Output]"
-          TopLeft="759,254">
+          TopLeft="2005,99">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-196.4,81"
+              EndConnector="68,0"
               Start="0,0"
-              End="-196.4,73.5">
+              End="60.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.1821471652594" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,52.1821471652594"
-                    Point2="0,56.1821471652594"
-                    Point3="-4,56.1821471652594" />
-                  <mssgle:LineSegment
-                    End="-192.4,56.1821471652594" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-192.4,56.1821471652594"
-                    Point2="-196.4,56.1821471652594"
-                    Point3="-196.4,60.1821471652594" />
-                  <mssgle:LineSegment
-                    End="-196.4,73.5" />
+                    End="60.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -49637,28 +49650,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Ensure correctness of license data.Paths[Union All Output 14]"
-          TopLeft="1387,99.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="71,0"
-              Start="0,0"
-              End="63.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="63.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Union All Output 13]"
           TopLeft="1822,99.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -49680,7 +49671,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Union All Output 12]"
+          Id="Package\Ensure correctness of license data.Paths[Union All Output 13]"
           TopLeft="2188,99.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -49702,7 +49693,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Union All Output 11]"
+          Id="Package\Ensure correctness of license data.Paths[Union All Output 12]"
           TopLeft="1560.25,598">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -49724,7 +49715,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Union All Output 1]"
+          Id="Package\Ensure correctness of license data.Paths[Union All Output 11]"
           TopLeft="950,100.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -49737,6 +49728,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="76.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ensure correctness of license data.Paths[Union All Output 1]"
+          TopLeft="1387,99.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="71,0"
+              Start="0,0"
+              End="63.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="63.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -49803,108 +49816,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Ensure correctness of license data.Paths[Multicast Output 24]"
-          TopLeft="1769,437">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-208.5,119"
-              Start="0,0"
-              End="-208.5,111.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,55.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,55.5"
-                    Point2="0,59.5"
-                    Point3="-4,59.5" />
-                  <mssgle:LineSegment
-                    End="-204.5,59.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-204.5,59.5"
-                    Point2="-208.5,59.5"
-                    Point3="-208.5,63.5" />
-                  <mssgle:LineSegment
-                    End="-208.5,111.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Multicast Output 23]"
-          TopLeft="2127,440">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-543.666666666667,116"
-              Start="0,0"
-              End="-543.666666666667,108.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,64.8403819918144" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,64.8403819918144"
-                    Point2="0,68.8403819918144"
-                    Point3="-4,68.8403819918144" />
-                  <mssgle:LineSegment
-                    End="-539.666666666667,68.8403819918144" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-539.666666666667,68.8403819918144"
-                    Point2="-543.666666666667,68.8403819918144"
-                    Point3="-543.666666666667,72.8403819918144" />
-                  <mssgle:LineSegment
-                    End="-543.666666666667,108.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Multicast Output 22]"
-          TopLeft="1333,430">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="204.666666666667,126"
-              Start="0,0"
-              End="204.666666666667,118.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,70.7748976807639" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,70.7748976807639"
-                    Point2="0,74.7748976807639"
-                    Point3="4,74.7748976807639" />
-                  <mssgle:LineSegment
-                    End="200.666666666667,74.7748976807639" />
-                  <mssgle:CubicBezierSegment
-                    Point1="200.666666666667,74.7748976807639"
-                    Point2="204.666666666667,74.7748976807639"
-                    Point3="204.666666666667,78.7748976807639" />
-                  <mssgle:LineSegment
-                    End="204.666666666667,118.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Multicast Output 21]"
           TopLeft="896,426">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -49938,7 +49849,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Multicast Output 2]"
+          Id="Package\Ensure correctness of license data.Paths[Multicast Output 23]"
           TopLeft="1577.66666666667,774">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -49963,6 +49874,108 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                     Point3="121.333333333333,30.1052631578947" />
                   <mssgle:LineSegment
                     End="121.333333333333,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ensure correctness of license data.Paths[Multicast Output 22]"
+          TopLeft="2127,440">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-543.666666666667,116"
+              Start="0,0"
+              End="-543.666666666667,108.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.8403819918144" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,64.8403819918144"
+                    Point2="0,68.8403819918144"
+                    Point3="-4,68.8403819918144" />
+                  <mssgle:LineSegment
+                    End="-539.666666666667,68.8403819918144" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-539.666666666667,68.8403819918144"
+                    Point2="-543.666666666667,68.8403819918144"
+                    Point3="-543.666666666667,72.8403819918144" />
+                  <mssgle:LineSegment
+                    End="-543.666666666667,108.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ensure correctness of license data.Paths[Multicast Output 21]"
+          TopLeft="1333,430">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="204.666666666667,126"
+              Start="0,0"
+              End="204.666666666667,118.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.7748976807639" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,70.7748976807639"
+                    Point2="0,74.7748976807639"
+                    Point3="4,74.7748976807639" />
+                  <mssgle:LineSegment
+                    End="200.666666666667,74.7748976807639" />
+                  <mssgle:CubicBezierSegment
+                    Point1="200.666666666667,74.7748976807639"
+                    Point2="204.666666666667,74.7748976807639"
+                    Point3="204.666666666667,78.7748976807639" />
+                  <mssgle:LineSegment
+                    End="204.666666666667,118.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ensure correctness of license data.Paths[Multicast Output 2]"
+          TopLeft="1769,437">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-208.5,119"
+              Start="0,0"
+              End="-208.5,111.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,55.5"
+                    Point2="0,59.5"
+                    Point3="-4,59.5" />
+                  <mssgle:LineSegment
+                    End="-204.5,59.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-204.5,59.5"
+                    Point2="-208.5,59.5"
+                    Point3="-208.5,63.5" />
+                  <mssgle:LineSegment
+                    End="-208.5,111.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -50193,6 +50206,142 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Ensure correctness of license data.Paths[Derived Column Output11]"
+          TopLeft="2311,440">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-704.833333333333,116"
+              Start="0,0"
+              End="-704.833333333333,108.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,80.6644295302014" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,80.6644295302014"
+                    Point2="0,84.6644295302014"
+                    Point3="-4,84.6644295302014" />
+                  <mssgle:LineSegment
+                    End="-700.833333333333,84.6644295302014" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-700.833333333333,84.6644295302014"
+                    Point2="-704.833333333333,84.6644295302014"
+                    Point3="-704.833333333333,88.6644295302014" />
+                  <mssgle:LineSegment
+                    End="-704.833333333333,108.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ensure correctness of license data.Paths[Derived Column Output10]"
+          TopLeft="759,254">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-196.4,81"
+              Start="0,0"
+              End="-196.4,73.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.1821471652594" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,52.1821471652594"
+                    Point2="0,56.1821471652594"
+                    Point3="-4,56.1821471652594" />
+                  <mssgle:LineSegment
+                    End="-192.4,56.1821471652594" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-192.4,56.1821471652594"
+                    Point2="-196.4,56.1821471652594"
+                    Point3="-196.4,60.1821471652594" />
+                  <mssgle:LineSegment
+                    End="-196.4,73.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ensure correctness of license data.Paths[Derived Column Output9]"
+          TopLeft="606.5,266">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-65.3,69"
+              Start="0,0"
+              End="-65.3,61.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.039309683605" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.039309683605"
+                    Point2="0,38.039309683605"
+                    Point3="-4,38.039309683605" />
+                  <mssgle:LineSegment
+                    End="-61.3,38.039309683605" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-61.3,38.039309683605"
+                    Point2="-65.3,38.039309683605"
+                    Point3="-65.3,42.039309683605" />
+                  <mssgle:LineSegment
+                    End="-65.3,61.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ensure correctness of license data.Paths[Derived Column Output8]"
+          TopLeft="431,237">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="88.8,98"
+              Start="0,0"
+              End="88.8,90.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.0268456375839" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,50.0268456375839"
+                    Point2="0,54.0268456375839"
+                    Point3="4,54.0268456375839" />
+                  <mssgle:LineSegment
+                    End="84.8,54.0268456375839" />
+                  <mssgle:CubicBezierSegment
+                    Point1="84.8,54.0268456375839"
+                    Point2="88.8,54.0268456375839"
+                    Point3="88.8,58.0268456375839" />
+                  <mssgle:LineSegment
+                    End="88.8,90.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ensure correctness of license data.Paths[Derived Column Output7]"
           TopLeft="262.5,213">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -50225,106 +50374,20 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Derived Column Output10]"
-          TopLeft="2005,99">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="68,0"
-              Start="0,0"
-              End="60.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="60.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Derived Column Output9]"
-          TopLeft="1641,99.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="66,0"
-              Start="0,0"
-              End="58.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="58.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Derived Column Output8]"
-          TopLeft="2000,355">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="62,64"
-              Start="0,0"
-              End="54.5,64">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="27,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="27,0"
-                    Point2="31,0"
-                    Point3="31,4" />
-                  <mssgle:LineSegment
-                    End="31,60" />
-                  <mssgle:CubicBezierSegment
-                    Point1="31,60"
-                    Point2="31,64"
-                    Point3="35,64" />
-                  <mssgle:LineSegment
-                    End="54.5,64" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Ensure correctness of license data.Paths[Derived Column Output7]"
-          TopLeft="1559.5,684">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,48"
-              Start="0,0"
-              End="0,40.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <AnnotationLayout
+          Text="If severity of incorrect data is High, the whole row has to be removed.&#xD;&#xA;Medium severity indicates that data has to be processed before it can be put into dimensions and fact tables."
+          ParentId="Package\Ensure correctness of license data"
+          FontInfo="{assembly:Null}"
+          Size="307,104"
+          Id="22c0ecee-f6ae-488c-bd57-188ec4497b98"
+          TopLeft="1036,809" />
+        <AnnotationLayout
+          Text="Four blocks for one check is not ideal, but it's the least we could do here"
+          ParentId="Package\Ensure correctness of license data"
+          FontInfo="{assembly:Null}"
+          Size="203,72"
+          Id="b1b2aa9b-58e4-42cd-8250-87737a62987b"
+          TopLeft="1007,407" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -51150,30 +51213,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         <NodeLayout
           Size="154,42"
           Id="Package\Extract license data\Get license data from dataset"
-          TopLeft="563,116" />
+          TopLeft="598,116" />
         <NodeLayout
           Size="203,42"
           Id="Package\Extract license data\Insert error info to DataExtractionErrors table"
-          TopLeft="653,436" />
+          TopLeft="688,436" />
         <NodeLayout
           Size="178,42"
           Id="Package\Extract license data\Insert license data to LicenseExtract table"
-          TopLeft="419,345" />
+          TopLeft="454,345" />
         <NodeLayout
           Size="130,42"
           Id="Package\Extract license data\Derive error info"
-          TopLeft="691,246" />
+          TopLeft="726,246" />
         <NodeLayout
           Size="156,42"
           Id="Package\Extract license data\Generate source row number"
-          TopLeft="429,246" />
+          TopLeft="464,246" />
         <NodeLayout
           Size="130,42"
           Id="Package\Extract license data\Generate error info"
-          TopLeft="690,343" />
+          TopLeft="725,343" />
         <EdgeLayout
           Id="Package\Extract license data.Paths[Derived Column Output]"
-          TopLeft="755.5,288">
+          TopLeft="790.5,288">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -51195,7 +51258,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Extract license data.Paths[Output 01]"
-          TopLeft="754.75,385">
+          TopLeft="789.75,385">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -51217,7 +51280,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Extract license data.Paths[Output 0]"
-          TopLeft="507.5,288">
+          TopLeft="542.5,288">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -51239,7 +51302,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Extract license data.Paths[Flat File Source Output]"
-          TopLeft="615.666666666667,158">
+          TopLeft="650.666666666667,158">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -51273,7 +51336,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Extract license data.Paths[Flat File Source Error Output]"
-          TopLeft="664.333333333333,158">
+          TopLeft="699.333333333333,158">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -51307,6 +51370,20 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="Custom script generating a sequence number for every row, so rows with mistakes or errors can be found easier"
+          ParentId="Package\Extract license data"
+          FontInfo="{assembly:Null}"
+          Size="292,72"
+          Id="f1110d06-e487-480e-a5e2-100bf9c56813"
+          TopLeft="145,232" />
+        <AnnotationLayout
+          Text="Convert error codes to sentences telling what went wrong"
+          ParentId="Package\Extract license data"
+          FontInfo="{assembly:Null}"
+          Size="169,72"
+          Id="7036f68a-834c-4dd8-b878-62ffd9850ae1"
+          TopLeft="863,328" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -51658,7 +51735,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     design-time-name="Package\Stage license data">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="146,42"
           Id="Package\Stage license data\Handle strings"
@@ -51741,6 +51818,20 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="Handle -&gt; trim, replace empty strings and null values with '(no data)'"
+          ParentId="Package\Stage license data"
+          FontInfo="{assembly:Null}"
+          Size="157,72"
+          Id="f76bfd12-1de6-492d-8c52-6a6d450972f2"
+          TopLeft="694,164" />
+        <AnnotationLayout
+          Text="Handle -&gt; parse, if applicable - check if in valid ranges etc., set to NULL or default value if invalid"
+          ParentId="Package\Stage license data"
+          FontInfo="{assembly:Null}"
+          Size="295,60"
+          Id="134fba36-0c6e-4cce-83bd-46a77838fad4"
+          TopLeft="713,297" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -51985,6 +52076,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="We do not handle payments for fees that we don't have in the database. For the sake of data completion these probably should be also included though."
+          ParentId="Package\Stage payment data"
+          FontInfo="{assembly:Null}"
+          Size="336,72"
+          Id="3889d225-62c1-4ef3-8f0d-7e1746a00a4a"
+          TopLeft="823,307" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
