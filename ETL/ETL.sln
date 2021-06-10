@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "ETL", "ETL\ETL.dtproj", "{A525B464-0822-4CAA-A8A2-9BE2FCE3A883}"
 EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Cube", "Cube\Cube.dwproj", "{E8B768E2-2FFA-43A5-814D-3DB39D88E25D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -12,6 +14,9 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A525B464-0822-4CAA-A8A2-9BE2FCE3A883}.Development|Default.ActiveCfg = Development
 		{A525B464-0822-4CAA-A8A2-9BE2FCE3A883}.Development|Default.Build.0 = Development
+		{E8B768E2-2FFA-43A5-814D-3DB39D88E25D}.Development|Default.ActiveCfg = Development
+		{E8B768E2-2FFA-43A5-814D-3DB39D88E25D}.Development|Default.Build.0 = Development
+		{E8B768E2-2FFA-43A5-814D-3DB39D88E25D}.Development|Default.Deploy.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
