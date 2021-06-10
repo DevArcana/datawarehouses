@@ -1,0 +1,350 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3ebf5911-8f67-42c6-8e83-476d3f815da6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Miniproject</ID>
+  <Name>Miniproject</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Miniproject</DataSourceID>
+  <Schema>
+    <xs:schema id="Miniproject" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Miniproject" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="48d32762-fd69-44df-97f4-285089be7377">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="DW_BusinessDim" msprop:design-time-name="ef31e181-5e5e-49b5-987b-f286d23744bc" msprop:DbTableName="BusinessDim" msprop:FriendlyName="BusinessDim" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BusinessId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="f7d478d1-089d-466e-8f77-850f1bffcad8" msprop:DbColumnName="BusinessId" msprop:FriendlyName="BusinessId" type="xs:int" />
+                  <xs:element name="BusinessName" msprop:design-time-name="67d6f1e9-d861-4fd9-b497-b9394c0f5ae1" msprop:DbColumnName="BusinessName" msprop:FriendlyName="BusinessName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="300" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BusinessName2" msprop:design-time-name="88de81c7-fdbf-4933-bfc5-16d56389e8b8" msprop:DbColumnName="BusinessName2" msprop:FriendlyName="BusinessName2">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BusinessType" msprop:design-time-name="bd175d64-8983-4986-a62c-ff9053c2c7ba" msprop:DbColumnName="BusinessType" msprop:FriendlyName="BusinessType">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AddressBuilding" msprop:design-time-name="42952e1e-f430-49a8-aeb3-9b59e0b64a7f" msprop:DbColumnName="AddressBuilding" msprop:FriendlyName="AddressBuilding">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AddressStreetName" msprop:design-time-name="650f4491-30c3-4129-b1dc-b1e22568b9d1" msprop:DbColumnName="AddressStreetName" msprop:FriendlyName="AddressStreetName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="75" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SecondaryAddressStreetName" msprop:design-time-name="7fc3a891-d06d-4ddf-9efc-68eb6852c18d" msprop:DbColumnName="SecondaryAddressStreetName" msprop:FriendlyName="SecondaryAddressStreetName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="75" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AddressCity" msprop:design-time-name="b1cae830-0660-41cc-bc55-d1e23fb0c6b4" msprop:DbColumnName="AddressCity" msprop:FriendlyName="AddressCity">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AddressState" msprop:design-time-name="2f2bc6d1-1fd9-404d-bbc4-dcf074183c11" msprop:DbColumnName="AddressState" msprop:FriendlyName="AddressState">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AddressZIP" msprop:design-time-name="51abd4ee-06f3-449e-8959-e322dc7ad36b" msprop:DbColumnName="AddressZIP" msprop:FriendlyName="AddressZIP">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AddressBorough" msprop:design-time-name="d4781f74-7ae4-4ee9-955d-824077f9790e" msprop:DbColumnName="AddressBorough" msprop:FriendlyName="AddressBorough">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BoroughCode" msprop:design-time-name="cc861e2e-e4a0-424f-905c-a68c1984ee03" msprop:DbColumnName="BoroughCode" msprop:FriendlyName="BoroughCode">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CommunityBoard" msprop:design-time-name="370b7c29-d1a6-4351-9611-c7a1820d5747" msprop:DbColumnName="CommunityBoard" msprop:FriendlyName="CommunityBoard">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CouncilDistrict" msprop:design-time-name="da2f32f1-d654-4744-9b42-819ffd3bd619" msprop:DbColumnName="CouncilDistrict" msprop:FriendlyName="CouncilDistrict">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CensusTract" msprop:design-time-name="a7edad56-c11a-4c50-8583-9d7f2bdf87be" msprop:DbColumnName="CensusTract" msprop:FriendlyName="CensusTract">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Longitude" msprop:design-time-name="817ecaf5-8a66-4d04-a4e0-89bd79c6160a" msprop:DbColumnName="Longitude" msprop:FriendlyName="Longitude">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Latitude" msprop:design-time-name="779d5738-3fe3-4d14-8a11-41343fdd18c9" msprop:DbColumnName="Latitude" msprop:FriendlyName="Latitude">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_FeeDim" msprop:design-time-name="9a76acf9-951f-4b98-aa8d-f2d52ce77819" msprop:DbTableName="FeeDim" msprop:FriendlyName="FeeDim" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FeeId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="246fe77e-a9f6-4f05-8018-03e69f8cf6b6" msprop:DbColumnName="FeeId" msprop:FriendlyName="FeeId" type="xs:int" />
+                  <xs:element name="IndustryId" msprop:design-time-name="0f99bce1-ff62-4b5b-81b7-4c7a2b8a51e3" msprop:DbColumnName="IndustryId" msprop:FriendlyName="IndustryId" type="xs:int" />
+                  <xs:element name="RecordType" msprop:design-time-name="2b6ddcca-a669-4897-85a3-1013b3f67ada" msprop:DbColumnName="RecordType" msprop:FriendlyName="RecordType">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FeeType" msprop:design-time-name="b25ebea6-b43c-440f-a99e-064f8b253e0d" msprop:DbColumnName="FeeType" msprop:FriendlyName="FeeType">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FeeDescription" msprop:design-time-name="8d4c5aaa-a43d-4f9c-8f0e-20dbde9ba883" msprop:DbColumnName="FeeDescription" msprop:FriendlyName="FeeDescription">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_IndustryDim" msprop:design-time-name="d3a947b8-1682-4276-892a-8f12c68f6471" msprop:DbTableName="IndustryDim" msprop:FriendlyName="IndustryDim" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IndustryId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="29e951ac-5a7f-42c5-a164-d8743061f6ca" msprop:DbColumnName="IndustryId" msprop:FriendlyName="IndustryId" type="xs:int" />
+                  <xs:element name="Industry" msprop:design-time-name="f7c76bf1-dc9b-4fc9-895c-84cfd724eae3" msprop:DbColumnName="Industry" msprop:FriendlyName="Industry">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_LicenseFact" msprop:design-time-name="11d02b0c-a994-45e1-a34d-239ae9af7e6a" msprop:DbTableName="LicenseFact" msprop:FriendlyName="LicenseFact" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CreationDate" msprop:design-time-name="df53ef14-a26a-4adc-b634-69122982983d" msprop:DbColumnName="CreationDate" msprop:FriendlyName="CreationDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ExpirationDate" msprop:design-time-name="f3f14427-adb9-4070-a4c6-d3c4c27b6f7f" msprop:DbColumnName="ExpirationDate" msprop:FriendlyName="ExpirationDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="BusinessId" msprop:design-time-name="c452604a-1995-47e5-bedd-d53387112a93" msprop:DbColumnName="BusinessId" msprop:FriendlyName="BusinessId" type="xs:int" />
+                  <xs:element name="IndustryId" msprop:design-time-name="251f86b6-b7c6-4d20-b7d9-fc3f2b5f2127" msprop:DbColumnName="IndustryId" msprop:FriendlyName="IndustryId" type="xs:int" />
+                  <xs:element name="LicenseNumber" msprop:design-time-name="c0150210-3e59-4b60-be64-ed477b92c6f7" msprop:DbColumnName="LicenseNumber" msprop:FriendlyName="LicenseNumber">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DurationInDays" msprop:design-time-name="be906d3d-059d-47e6-96a5-24c755bfb861" msprop:DbColumnName="DurationInDays" msprop:FriendlyName="DurationInDays" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_PaymentFact" msprop:design-time-name="18833454-7712-419b-a5f1-8231471d589e" msprop:DbTableName="PaymentFact" msprop:FriendlyName="PaymentFact" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PaymentDate" msprop:design-time-name="b57ce153-27aa-4c9e-8354-c72fc145ca17" msprop:DbColumnName="PaymentDate" msprop:FriendlyName="PaymentDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="FeeId" msprop:design-time-name="693a6bff-d834-4704-88e8-56f699445a58" msprop:DbColumnName="FeeId" msprop:FriendlyName="FeeId" type="xs:int" />
+                  <xs:element name="BusinessId" msprop:design-time-name="49f694c4-f804-4f7f-9ff3-c3d12f0065bc" msprop:DbColumnName="BusinessId" msprop:FriendlyName="BusinessId" type="xs:int" />
+                  <xs:element name="TransactionTypeId" msprop:design-time-name="60eda6af-e9e4-4d45-8177-994565899670" msprop:DbColumnName="TransactionTypeId" msprop:FriendlyName="TransactionTypeId" type="xs:int" />
+                  <xs:element name="FeeSequenceId" msprop:design-time-name="a076d296-b988-412b-a954-408cfaa73961" msprop:DbColumnName="FeeSequenceId" msprop:FriendlyName="FeeSequenceId">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FeeAmount" msprop:design-time-name="e68d1c8c-0e2e-4b0e-b83e-507b42be4c5a" msprop:DbColumnName="FeeAmount" msprop:FriendlyName="FeeAmount" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="PaymentAmount" msprop:design-time-name="258cbead-932b-4c9c-baad-f6fed84c7594" msprop:DbColumnName="PaymentAmount" msprop:FriendlyName="PaymentAmount" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_TimeDim" msprop:design-time-name="d18c769d-f2e6-4a8a-aeff-a2fb96dee38d" msprop:DbTableName="TimeDim" msprop:FriendlyName="TimeDim" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Date" msprop:design-time-name="39c71ee7-5c96-4206-aaf2-79198e4c41b0" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
+                  <xs:element name="Day" msprop:design-time-name="2d081c83-f39b-4eaf-a6cd-0704319137de" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:int" />
+                  <xs:element name="DayName" msprop:design-time-name="72d87f6d-a24e-4398-8569-285c57a5c73a" msprop:DbColumnName="DayName" msprop:FriendlyName="DayName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Weekday" msprop:design-time-name="a047ef63-cf08-41c1-b2e4-ce2bef7349d3" msprop:DbColumnName="Weekday" msprop:FriendlyName="Weekday" type="xs:int" />
+                  <xs:element name="Week" msprop:design-time-name="565eab1f-7390-4bac-987e-e9310ff9e779" msprop:DbColumnName="Week" msprop:FriendlyName="Week" type="xs:int" />
+                  <xs:element name="Month" msprop:design-time-name="041c8033-fa67-4def-9b37-7ed9aa6505d9" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" />
+                  <xs:element name="MonthName" msprop:design-time-name="44e09e9a-33e2-4a09-baac-47e42ccff5f6" msprop:DbColumnName="MonthName" msprop:FriendlyName="MonthName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Quarter" msprop:design-time-name="78da9efe-72e7-4a3a-ba24-0cc7738b8302" msprop:DbColumnName="Quarter" msprop:FriendlyName="Quarter" type="xs:int" />
+                  <xs:element name="Year" msprop:design-time-name="69e10787-5a69-47e4-9f43-c906d9fad98e" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="DW_TransactionTypeDim" msprop:design-time-name="9c4f9507-ce24-4c3c-a556-386164afa2fe" msprop:DbTableName="TransactionTypeDim" msprop:FriendlyName="TransactionTypeDim" msprop:DbSchemaName="DW" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TransactionTypeId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="6b9f73b6-33c4-44a4-984a-4a21f26e5205" msprop:DbColumnName="TransactionTypeId" msprop:FriendlyName="TransactionTypeId" type="xs:int" />
+                  <xs:element name="TransactionType" msprop:design-time-name="056085aa-5cff-4853-858d-1afc12673bde" msprop:DbColumnName="TransactionType" msprop:FriendlyName="TransactionType">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_BusinessDim" />
+          <xs:field xpath="BusinessId" />
+        </xs:unique>
+        <xs:unique name="DW_FeeDim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_FeeDim" />
+          <xs:field xpath="FeeId" />
+        </xs:unique>
+        <xs:unique name="DW_IndustryDim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_IndustryDim" />
+          <xs:field xpath="IndustryId" />
+        </xs:unique>
+        <xs:unique name="DW_TimeDim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_TimeDim" />
+          <xs:field xpath="Date" />
+        </xs:unique>
+        <xs:unique name="DW_TransactionTypeDim_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//DW_TransactionTypeDim" />
+          <xs:field xpath="TransactionTypeId" />
+        </xs:unique>
+        <xs:keyref name="FK_PaymentFact_ToTimeDim" refer="DW_TimeDim_Constraint1">
+          <xs:selector xpath=".//DW_PaymentFact" />
+          <xs:field xpath="PaymentDate" />
+        </xs:keyref>
+        <xs:keyref name="FK_PaymentFact_ToFeeDim" refer="DW_FeeDim_Constraint1">
+          <xs:selector xpath=".//DW_PaymentFact" />
+          <xs:field xpath="FeeId" />
+        </xs:keyref>
+        <xs:keyref name="FK_PaymentFact_ToTransactionTypeDim" refer="DW_TransactionTypeDim_Constraint1">
+          <xs:selector xpath=".//DW_PaymentFact" />
+          <xs:field xpath="TransactionTypeId" />
+        </xs:keyref>
+        <xs:keyref name="FK_PaymentFact_ToBusinessDim" refer="Constraint1">
+          <xs:selector xpath=".//DW_PaymentFact" />
+          <xs:field xpath="BusinessId" />
+        </xs:keyref>
+        <xs:keyref name="FK_LicenseFact_ToTimeDim_ExpirationDate" refer="DW_TimeDim_Constraint1">
+          <xs:selector xpath=".//DW_LicenseFact" />
+          <xs:field xpath="ExpirationDate" />
+        </xs:keyref>
+        <xs:keyref name="FK_LicenseFact_ToBusinessDim" refer="Constraint1">
+          <xs:selector xpath=".//DW_LicenseFact" />
+          <xs:field xpath="BusinessId" />
+        </xs:keyref>
+        <xs:keyref name="FK_LicenseFact_ToTimeDim_CreationDate" refer="DW_TimeDim_Constraint1">
+          <xs:selector xpath=".//DW_LicenseFact" />
+          <xs:field xpath="CreationDate" />
+        </xs:keyref>
+        <xs:keyref name="FK_LicenseFact_ToIndustryDim" refer="DW_IndustryDim_Constraint1">
+          <xs:selector xpath=".//DW_LicenseFact" />
+          <xs:field xpath="IndustryId" />
+        </xs:keyref>
+        <xs:keyref name="FK_FeeDim_ToIndustryDim" refer="DW_IndustryDim_Constraint1">
+          <xs:selector xpath=".//DW_FeeDim" />
+          <xs:field xpath="IndustryId" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Miniproject xmlns="" />
+  </Schema>
+</DataSourceView>

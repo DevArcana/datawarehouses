@@ -1,0 +1,182 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c83f6029-eb98-4488-b015-acef46b25a53" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fee Dim</ID>
+  <Name>Fee Dim</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="54a99ec2-d884-4ca3-96e0-6a241a327786">
+    <DataSourceViewID>Miniproject</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="3171c29c-fa33-4fd6-86b3-41c10b15af5c">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="df920e19-2848-453b-b203-1703ce961a0f">
+      <ID>Fee Id</ID>
+      <Name>Fee Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7693a70a-fd47-486d-b269-f264bca47bb7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a19f8ae-e821-4287-8e03-693efc7e86ed">
+            <TableID>DW_FeeDim</TableID>
+            <ColumnID>FeeId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="c7014d02-8ce1-418b-b2f1-d4178d54fc90">
+          <AttributeID>Record Type</AttributeID>
+          <Name>Record Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1d29bc57-dd4c-4942-9ecd-8387b9f37c4b">
+          <AttributeID>Fee Type</AttributeID>
+          <Name>Fee Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4646bcf9-252b-4ece-b121-d8cc8abc7a8a">
+          <AttributeID>Fee Description</AttributeID>
+          <Name>Fee Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="18567e45-21ea-4194-a556-58a570a5afb5">
+          <AttributeID>Industry Id</AttributeID>
+          <Name>Industry Id</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fde0dc95-51ca-4369-9f6f-5f3863617425">
+      <ID>Record Type</ID>
+      <Name>Record Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0829f83e-0de1-44ae-81cf-012face87972">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6f5ce410-4504-463e-afbc-cce56b22acfb">
+            <TableID>DW_FeeDim</TableID>
+            <ColumnID>RecordType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2bcd1358-d00e-4fe4-8d9a-5e81644589a7">
+      <ID>Fee Type</ID>
+      <Name>Fee Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="da01fae0-b976-4e49-a46d-89eb20584a74">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="71c9a258-bb41-4944-a4df-3c2125f170ff">
+            <TableID>DW_FeeDim</TableID>
+            <ColumnID>FeeType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b8165051-b6b7-4d6c-a222-7fcbd3fef508">
+      <ID>Fee Description</ID>
+      <Name>Fee Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b9ddffa9-ecc2-4402-b8c2-ed4f304e2d6d">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d7de3c3-2413-42b4-8522-c8b52ebffa0f">
+            <TableID>DW_FeeDim</TableID>
+            <ColumnID>FeeDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e282cc9f-7b0e-4c50-9d17-425c6f7ff460">
+      <ID>Industry Id</ID>
+      <Name>Industry Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1a031e08-352b-475e-ab59-ccbc3c78ac05">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dee95a5f-a626-4820-9ae2-abad8f705bec">
+            <TableID>DW_IndustryDim</TableID>
+            <ColumnID>IndustryId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4be16c0c-5233-44dc-87ad-32939a528662">
+          <AttributeID>Industry</AttributeID>
+          <Name>Industry</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="52af9f5f-53ce-4de3-910f-e74e52e8e5bd">
+      <ID>Industry</ID>
+      <Name>Industry</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1a3b34e5-8db0-479e-8419-c31d4d8ccac3">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a41dec4b-1c2c-4055-a850-f3d1bd349ec4">
+            <TableID>DW_IndustryDim</TableID>
+            <ColumnID>Industry</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

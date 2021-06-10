@@ -1,0 +1,425 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="22fcff7e-e356-4fe7-8eda-daf861b70800" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Business Dim</ID>
+  <Name>Business Dim</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3071" scrolltop="-5575" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11388" y="16150" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="BusinessDim" left="-149" top="-42" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5207" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00005714000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_BusinessDim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3071</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5575</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-149</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-42</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="254">
+            <Shape Id="Business Id" Expanded="true">
+              <Attributes>
+                <Attribute Id="Business Id" />
+                <Attribute Id="Address Borough" />
+                <Attribute Id="Address Building" />
+                <Attribute Id="Address City" />
+                <Attribute Id="Address State" />
+                <Attribute Id="Address Street Name" />
+                <Attribute Id="Address ZIP" />
+                <Attribute Id="Borough Code" />
+                <Attribute Id="Business Name" />
+                <Attribute Id="Business Name2" />
+                <Attribute Id="Business Type" />
+                <Attribute Id="Census Tract" />
+                <Attribute Id="Community Board" />
+                <Attribute Id="Council District" />
+                <Attribute Id="Secondary Address Street Name" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2aa0c5b2-6a70-4194-bf79-1138d4d9296f">
+    <DataSourceViewID>Miniproject</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="fdee873e-ad7b-4a1a-8600-a69440bda463">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="4e54fe4b-43c2-4fa5-b923-818e407b9490">
+      <ID>Business Id</ID>
+      <Name>Business Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c337b2b8-ea7a-4096-888b-24f5d7413e23">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a3ea9656-6acb-4ac0-9972-4b588440dce9">
+            <TableID>DW_BusinessDim</TableID>
+            <ColumnID>BusinessId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="94f4718b-44b2-46a0-88af-cd74344c45c1">
+          <AttributeID>Business Name</AttributeID>
+          <Name>Business Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="29f93962-9288-46b9-9403-91cec56e89bb">
+          <AttributeID>Business Name2</AttributeID>
+          <Name>Business Name2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4f57ea04-108b-4e41-8eb4-c380a9ea27ff">
+          <AttributeID>Business Type</AttributeID>
+          <Name>Business Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2cee7955-7df1-4327-920f-bfe2b1621ee3">
+          <AttributeID>Address Building</AttributeID>
+          <Name>Address Building</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c8fa1a9d-8342-45ec-8a08-d0f87fc52039">
+          <AttributeID>Address Street Name</AttributeID>
+          <Name>Address Street Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b770da69-09db-43c2-8ab2-0023ee5f3871">
+          <AttributeID>Secondary Address Street Name</AttributeID>
+          <Name>Secondary Address Street Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bdb35662-a955-46c2-8e2a-3505c07209d0">
+          <AttributeID>Address City</AttributeID>
+          <Name>Address City</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8a7c3fa1-a219-4764-a4e5-a1aae88d8e09">
+          <AttributeID>Address State</AttributeID>
+          <Name>Address State</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="06b84660-d4e0-4220-9f1d-15ee5d2bf2df">
+          <AttributeID>Address ZIP</AttributeID>
+          <Name>Address ZIP</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b9e505cc-9065-43cf-a0fe-623760c9a8fc">
+          <AttributeID>Address Borough</AttributeID>
+          <Name>Address Borough</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="060227b7-4929-4232-a2ca-ce6b8dfb26c7">
+          <AttributeID>Borough Code</AttributeID>
+          <Name>Borough Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fceb2170-40dd-424c-a022-f129d2a39f05">
+          <AttributeID>Community Board</AttributeID>
+          <Name>Community Board</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="15799109-c73e-4621-a508-08f4da2927a4">
+          <AttributeID>Council District</AttributeID>
+          <Name>Council District</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f65251ee-ceed-4bfb-866d-02f877b80e22">
+          <AttributeID>Census Tract</AttributeID>
+          <Name>Census Tract</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ddd1c1a1-a2c5-4308-a8e6-7fa2ff1128dc">
+      <ID>Business Name</ID>
+      <Name>Business Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="55810776-55d2-4348-ac0e-e203191194c0">
+          <DataType>WChar</DataType>
+          <DataSize>300</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b8e08ab5-2a12-4a74-a7a8-4b99f6366c39">
+            <TableID>DW_BusinessDim</TableID>
+            <ColumnID>BusinessName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ae4a2a29-9506-4b8c-8d67-4e82d8c094f0">
+      <ID>Business Name2</ID>
+      <Name>Business Name2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="08a7c72d-e014-4cb4-b98e-cbead54f1da4">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="136b4833-f50a-4fcd-87b1-c0dda0e408ed">
+            <TableID>DW_BusinessDim</TableID>
+            <ColumnID>BusinessName2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8b23ae5c-1926-4ed9-ac10-5938b81a72ea">
+      <ID>Business Type</ID>
+      <Name>Business Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="30dacd40-e91b-48e2-a0a4-55e2e8a6899f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7ae5c880-96c2-4841-8776-73928e94c917">
+            <TableID>DW_BusinessDim</TableID>
+            <ColumnID>BusinessType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4150c4fa-8c2c-48bb-8989-c7f1b8b99bf6">
+      <ID>Address Building</ID>
+      <Name>Address Building</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7ee764c8-b2e0-4f21-af72-300adc3e53cf">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7f39a071-eb85-4b5b-8b6d-9a4005183cc8">
+            <TableID>DW_BusinessDim</TableID>
+            <ColumnID>AddressBuilding</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="89c0a8fa-0309-4a99-b640-be79342e7c3b">
+      <ID>Address Street Name</ID>
+      <Name>Address Street Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9376e64f-d53c-4a8c-a3e1-1c5e137b4a88">
+          <DataType>WChar</DataType>
+          <DataSize>75</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c1559d1b-7286-4efe-a3ef-78855567ea55">
+            <TableID>DW_BusinessDim</TableID>
+            <ColumnID>AddressStreetName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1adad5a7-4c16-4c7f-a018-c9b2ea3d7241">
+      <ID>Secondary Address Street Name</ID>
+      <Name>Secondary Address Street Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c7804206-4b32-4eaf-bd97-6d1c65af1e8e">
+          <DataType>WChar</DataType>
+          <DataSize>75</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ecc44c4-7b0d-4d74-8d77-fb4f3e8d4b34">
+            <TableID>DW_BusinessDim</TableID>
+            <ColumnID>SecondaryAddressStreetName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="90bf9421-0f82-49d9-b024-c414d90ec28d">
+      <ID>Address City</ID>
+      <Name>Address City</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7634acc3-b3b5-4471-a1b1-3c79848cde48">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bec5790b-723a-4b64-85dc-c81b453f1a4e">
+            <TableID>DW_BusinessDim</TableID>
+            <ColumnID>AddressCity</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5a32dbb2-95da-4068-b81f-42543964c4cc">
+      <ID>Address State</ID>
+      <Name>Address State</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aa3e622f-65b2-4876-bb0b-942ae741011e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="baad8fb3-1994-4d46-9696-85ec336546d2">
+            <TableID>DW_BusinessDim</TableID>
+            <ColumnID>AddressState</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="990aa0ce-7223-4dc7-99ea-f3e2411c4f52">
+      <ID>Address ZIP</ID>
+      <Name>Address ZIP</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f0f84f2c-21ef-4777-a347-8af63471925b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8db87ef-38a4-4c4a-b6ee-c02a60046b02">
+            <TableID>DW_BusinessDim</TableID>
+            <ColumnID>AddressZIP</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8d06d6bc-24f3-4f19-8caf-68a785cbae00">
+      <ID>Address Borough</ID>
+      <Name>Address Borough</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="340b318a-72ae-4c96-8e7f-5a235f82f186">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="44dbc69a-61df-4ffe-9f38-6ed73ebe54de">
+            <TableID>DW_BusinessDim</TableID>
+            <ColumnID>AddressBorough</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="447848bf-822a-4039-b3e4-de43057bc207">
+      <ID>Borough Code</ID>
+      <Name>Borough Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="125ba337-c693-4abe-9306-97bee4e3b28c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="692a1bb8-5346-47e2-a76c-206cf2ec57e0">
+            <TableID>DW_BusinessDim</TableID>
+            <ColumnID>BoroughCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="722a1a90-60ad-4813-a5fa-7c24d3a84842">
+      <ID>Community Board</ID>
+      <Name>Community Board</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9d5dddaf-4254-4744-b74b-9f5961a0b82a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa7836cd-930f-4061-a27e-2866c172848b">
+            <TableID>DW_BusinessDim</TableID>
+            <ColumnID>CommunityBoard</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cdae2c04-ddbf-4538-a6e9-5dbf1080d4aa">
+      <ID>Council District</ID>
+      <Name>Council District</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9068580e-c3e5-4988-9553-6a0fcdbd393e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="99cc1feb-8d09-41f8-bf5c-8c860bd2a322">
+            <TableID>DW_BusinessDim</TableID>
+            <ColumnID>CouncilDistrict</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="53e61f1d-50ec-495c-92af-4de1e9e15846">
+      <ID>Census Tract</ID>
+      <Name>Census Tract</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="da5354e0-5625-435e-be00-252be1d09315">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="57193643-dd90-43a1-b946-47d5e9788e96">
+            <TableID>DW_BusinessDim</TableID>
+            <ColumnID>CensusTract</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
