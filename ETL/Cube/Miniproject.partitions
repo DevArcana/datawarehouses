@@ -1,17 +1,17 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="581c17e7-2a9d-490d-ae17-da686ef8a8d1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8d441678-89c8-4fff-a7dd-d729dbe82a7d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Miniproject</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>License Fact</ID>
       <Partitions>
-        <Partition dwd:design-time-name="e9a88309-b5df-4ab9-b853-8ee1a48b8f12">
+        <Partition dwd:design-time-name="6eea55e5-3501-47b7-ad88-7d598a1178b0">
           <ID>License Fact</ID>
           <Name>License Fact</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="35aeb4e2-d02b-46b2-b27f-2cbdb124cdd2">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e2bd43d1-dc79-4af5-868b-4a2a7d643c9c">
             <DataSourceViewID>Miniproject</DataSourceViewID>
             <TableID>DW_LicenseFact</TableID>
           </Source>
@@ -24,14 +24,14 @@
     <MeasureGroup>
       <ID>Payment Fact</ID>
       <Partitions>
-        <Partition dwd:design-time-name="60bde55c-0c2e-4236-b6f1-e4cfd08636b8">
+        <Partition dwd:design-time-name="2815b314-4bda-421f-a9cd-60ed0d33743e">
           <ID>Payment Fact</ID>
           <Name>Payment Fact</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="da268719-97f8-4c81-aa12-40012f3154bb">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="485c2857-8286-4397-b2e7-e9516eb524e5">
             <DataSourceViewID>Miniproject</DataSourceViewID>
             <TableID>DW_PaymentFact</TableID>
           </Source>
